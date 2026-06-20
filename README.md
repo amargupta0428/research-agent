@@ -154,3 +154,7 @@ tests/        offline tests for the loop guarantees
 EVAL.md       generated eval results
 CASE_STUDY.md problem, approach, results, and the three issues the eval caught
 ```
+
+## License
+
+MIT, see [LICENSE](LICENSE).

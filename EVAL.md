@@ -1,6 +1,6 @@
 # Eval results
 
-_Generated 2026-06-19 19:56 · control=claude-sonnet-4-6 · extract=claude-haiku-4-5_
+_Generated 2026-06-19 20:38 · control=claude-sonnet-4-6 · extract=claude-haiku-4-5_
 
 **Judge panel (cross-provider):** gpt-5.4 (openai), gemini-3.5-flash (gemini), opus-4.8 (anthropic). Each answer is scored by every available judge; we report **both the median and the mean** across the panel (median is robust to one outlier judge; mean is conservative). We deliberately do not hide panel disagreement behind a single number.
 
@@ -11,7 +11,7 @@ _Generated 2026-06-19 19:56 · control=claude-sonnet-4-6 · extract=claude-haiku
 - Avg correctness (median/mean): **0.99** / 0.97
 - Avg faithfulness (median/mean): **0.99** / 0.96  _(grounded in retrieved evidence)_
 - Avg precision (median/mean): **0.97** / 0.95  _(no wrong/hallucinated entities)_
-- Cited: **100%**
+- Answers cited, inline markers plus a sources list (presence check, not a quality score): **100%**
 - Keyword-match (programmatic): **95%**
 - Total agent tokens: **682,433**
 

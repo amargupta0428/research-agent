@@ -122,7 +122,8 @@ def write_eval_md(records: list[dict]) -> None:
         "_(grounded in retrieved evidence)_",
         f"- Avg precision (median/mean): **{avg('precision_median'):.2f}** / {avg('precision_mean'):.2f}  "
         "_(no wrong/hallucinated entities)_",
-        f"- Cited: **{cited * 100:.0f}%**",
+        f"- Answers cited, inline markers plus a sources list (presence check, not a quality "
+        f"score): **{cited * 100:.0f}%**",
         f"- Keyword-match (programmatic): **{kw * 100:.0f}%**",
         f"- Total agent tokens: **{total_tok:,}**",
         "",
