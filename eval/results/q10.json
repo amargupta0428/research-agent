@@ -1,0 +1,84 @@
+{
+  "id": "q10",
+  "goal": "Compare the standard individual paid 'Pro' tier monthly price (billed monthly, USD) of three AI coding assistants \u2014 GitHub Copilot Pro, Cursor Pro, and Windsurf Pro \u2014 and determine which is the cheapest and its price.",
+  "kind": "synthesis",
+  "expected": "GitHub Copilot Pro is the cheapest at $10/month, half the price of both Cursor Pro ($20/month) and Windsurf Pro ($20/month, which are tied), as of 2026-06-18.",
+  "answer": "## AI Coding Assistant Pro Tier Pricing Comparison (Monthly, Billed Monthly, USD)\n\n| Tool | Plan Name | Monthly Price (billed monthly) |\n|---|---|---|\n| **GitHub Copilot** | Pro | **$10 / month** |\n| **Cursor** | Pro | $20 / month |\n| **Windsurf** | Pro | $20 / month |\n\n### \ud83c\udfc6 Cheapest: GitHub Copilot Pro at **$10/month**\n\n**GitHub Copilot Pro** is the clear winner at **$10/user/month** (billed monthly) [1] \u2014 exactly **half the price** of both Cursor Pro and Windsurf Pro, which are each priced at **$20/month** [2][3].\n\n---\n\n### Plan Highlights\n- **GitHub Copilot Pro \u2013 $10/mo** [1]: Unlimited code completions & next-edit suggestions, model selection, access to Claude Code & Codex agents, code review, and $15/month in credits.\n- **Cursor Pro \u2013 $20/mo** [2]: Extended Agent limits, access to frontier AI models, MCPs, skills, and hooks (everything in the free Hobby tier, plus more).\n- **Windsurf Pro \u2013 $20/mo** [3]: Paid individual tier above the free plan, with expanded usage and model access.\n",
+  "citations": [
+    {
+      "id": 1,
+      "url": "https://github.com/features/copilot/plans",
+      "title": "GitHub Copilot Plans & Pricing",
+      "note": "Official GitHub page confirming Copilot Pro at $10/user/month billed monthly."
+    },
+    {
+      "id": 2,
+      "url": "https://cursor.com/pricing",
+      "title": "Cursor Pricing",
+      "note": "Official Cursor pricing page confirming the Pro (Individual) plan at $20/month."
+    },
+    {
+      "id": 3,
+      "url": "https://windsurf.com/pricing",
+      "title": "Windsurf Pricing",
+      "note": "Official Windsurf pricing page confirming the Pro plan at $20/month."
+    }
+  ],
+  "confidence": "high \u2014 All three prices were sourced directly from each product's official pricing page in this research run, and the Cursor Pro name/price was additionally corroborated by multiple third-party sources.",
+  "scores": {
+    "correct_mean": 1.0,
+    "correct_median": 1.0,
+    "faithful_mean": 0.917,
+    "faithful_median": 1.0,
+    "precision_mean": 1.0,
+    "precision_median": 1.0,
+    "correct": 1.0,
+    "faithful": 1.0,
+    "precision": 1.0,
+    "verdict": "PASS",
+    "verdict_mean": "PASS",
+    "verdict_median": "PASS",
+    "cited": true,
+    "keyword_hit": true,
+    "panel_size": 3,
+    "per_judge": [
+      {
+        "judge": "gpt-5.4",
+        "provider": "openai",
+        "correct": 1.0,
+        "faithful": 0.75,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PARTIAL",
+        "reasoning": "The answer matches the ground truth: Copilot Pro is $10/month, while Cursor Pro and Windsurf Pro are $20/month, making Copilot the cheapest. However, the retrieved evidence directly supports Copilot and Windsurf pricing, while Cursor's $20/month and the detailed plan highlights rely partly on search snippets/extra specifics not fully grounded in the fetched page evidence."
+      },
+      {
+        "judge": "gemini-3.5-flash",
+        "provider": "gemini",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "The agent's answer is completely accurate, matches the ground truth, and correctly identifies the pricing for all three platforms. All key claims are well-supported by the retrieved evidence (including the Windsurf pricing mentioned in the fetch summary) and properly cited."
+      },
+      {
+        "judge": "opus-4.8",
+        "provider": "anthropic",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "Answer correctly identifies Copilot Pro at $10/month as cheapest, with Cursor and Windsurf both at $20. All prices are supported by retrieved evidence and sources are cited."
+      }
+    ]
+  },
+  "stopped_reason": "model_finished",
+  "steps": 3,
+  "reads": 1,
+  "tool_calls": 4,
+  "apify_runs": 0,
+  "tokens": 16746,
+  "elapsed": 48.6
+}

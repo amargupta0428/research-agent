@@ -1,0 +1,90 @@
+{
+  "id": "q15",
+  "goal": "Compare the standard individual monthly subscription price (billed monthly, USD) of four consumer AI chatbot tiers \u2014 ChatGPT Plus, Claude Pro, Google AI Pro (formerly Gemini Advanced), and Perplexity Pro \u2014 and determine which single product is the cheapest and its price.",
+  "kind": "synthesis",
+  "expected": "Google AI Pro is the single cheapest at $19.99/month, just under ChatGPT Plus, Claude Pro, and Perplexity Pro, which are each $20/month (a three-way tie for the others), as of 2026-06-18.",
+  "answer": "## AI Chatbot Subscription Price Comparison (Monthly, Billed Monthly, USD)\n\nHere is a side-by-side comparison of the four standard individual monthly subscription tiers:\n\n| Rank | Product | Monthly Price (USD) |\n|------|---------|-------------------|\n| \ud83e\udd47 1st (Cheapest) | **Google AI Pro** (formerly Gemini Advanced) | **$19.99/mo** |\n| 2nd (tied) | ChatGPT Plus | $20.00/mo |\n| 2nd (tied) | Claude Pro | $20.00/mo |\n| 2nd (tied) | Perplexity Pro | $20.00/mo |\n\n### Key Findings\n\n- **Google AI Pro** is the cheapest at **$19.99/month**, which is $0.01 less than the other three [1].\n- **ChatGPT Plus** costs **$20/month** (billed monthly, no annual discount option). This price has remained unchanged since OpenAI launched the tier in February 2023 [2].\n- **Claude Pro** costs **$20/month** when billed monthly (drops to ~$17/month if billed annually) [3].\n- **Perplexity Pro** costs **$20/month** when billed monthly (drops to ~$16.67/month if billed annually at $200/year) [4].\n\n### Bottom Line\n\n**Google AI Pro (formerly Gemini Advanced) is the cheapest at $19.99/month** \u2014 though the margin is razor-thin (just $0.01/month cheaper than the others). In practical terms, all four products sit at effectively the same $20/month price point, with Google's plan being the only one to shave off a penny.\n",
+  "citations": [
+    {
+      "id": 1,
+      "url": "https://one.google.com/about/plans",
+      "title": "Google One Plans \u2014 Official Page",
+      "note": "Official Google One page confirms Google AI Pro is priced at $19.99/month."
+    },
+    {
+      "id": 2,
+      "url": "https://www.u7buy.com/blog/chatgpt-plus-price-breakdown/",
+      "title": "ChatGPT Plus Price Breakdown \u2014 u7buy Blog",
+      "note": "Confirms ChatGPT Plus costs $20/month (USD) billed monthly, unchanged since February 2023 launch."
+    },
+    {
+      "id": 3,
+      "url": "https://intuitionlabs.ai/articles/claude-pricing-plans-api-costs",
+      "title": "Claude Pricing Explained: Subscription Plans & API Costs \u2014 Intuition Labs",
+      "note": "Confirms Claude Pro costs $20/month when billed monthly, or $17/month when billed annually."
+    },
+    {
+      "id": 4,
+      "url": "https://www.thepricer.org/how-much-does-perplexity-pro-cost/",
+      "title": "How Much Does Perplexity Pro Cost? \u2014 ThePricer",
+      "note": "Confirms Perplexity Pro costs $20/month when billed monthly, or $200/year when billed annually."
+    }
+  ],
+  "confidence": "high \u2014 All four prices were confirmed from read sources (including the official Google One page). Three independent sources corroborate the $20/month figure for ChatGPT Plus, Claude Pro, and Perplexity Pro.",
+  "scores": {
+    "correct_mean": 1.0,
+    "correct_median": 1.0,
+    "faithful_mean": 0.967,
+    "faithful_median": 1.0,
+    "precision_mean": 1.0,
+    "precision_median": 1.0,
+    "correct": 1.0,
+    "faithful": 1.0,
+    "precision": 1.0,
+    "verdict": "PASS",
+    "verdict_mean": "PASS",
+    "verdict_median": "PASS",
+    "cited": true,
+    "keyword_hit": true,
+    "panel_size": 3,
+    "per_judge": [
+      {
+        "judge": "gpt-5.4",
+        "provider": "openai",
+        "correct": 1.0,
+        "faithful": 0.9,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "The answer matches the ground truth exactly: Google AI Pro is cheapest at $19.99/month, while ChatGPT Plus, Claude Pro, and Perplexity Pro are $20/month. Nearly all claims are supported by the retrieved evidence, though the statement that OpenAI launched ChatGPT Plus in February 2023 is grounded only via a third-party source rather than official evidence."
+      },
+      {
+        "judge": "gemini-3.5-flash",
+        "provider": "gemini",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "The agent's answer is perfectly accurate according to both the ground truth and the retrieved evidence. It correctly identifies Google AI Pro as the cheapest subscription at $19.99/month and the other three options at $20/month."
+      },
+      {
+        "judge": "opus-4.8",
+        "provider": "anthropic",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "The answer correctly identifies Google AI Pro as cheapest at $19.99 with the others at $20, matching ground-truth, and all claims are supported by the retrieved evidence with proper citations."
+      }
+    ]
+  },
+  "stopped_reason": "model_finished",
+  "steps": 4,
+  "reads": 4,
+  "tool_calls": 11,
+  "apify_runs": 0,
+  "tokens": 38301,
+  "elapsed": 72.8
+}

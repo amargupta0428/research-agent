@@ -1,0 +1,76 @@
+{
+  "id": "q19",
+  "goal": "Find the global cloud infrastructure services market share for AWS, Microsoft Azure, and Google Cloud for the most recent reported quarter as of June 2026, per Synergy Research Group, naming the quarter and firm.",
+  "kind": "market",
+  "expected": "Per Synergy Research Group for Q1 2026 (published April 29, 2026): AWS 28%, Microsoft Azure 21%, Google Cloud 14% (Big Three combined 63%; total quarterly spend $128.6B, +35% YoY). The prior Q3 2025 reading was AWS 29% / Azure 20% / Google 13%. As of 2026-06-18.",
+  "answer": "# Global Cloud Infrastructure Services Market Share \u2014 Q1 2026\n**Source: Synergy Research Group | Released: April 29, 2026**\n\nAccording to Synergy Research Group's data published on **April 29, 2026**, the global cloud infrastructure services market share for **Q1 2026 (January\u2013March 2026)** \u2014 the most recent reported quarter as of June 2026 \u2014 was as follows:\n\n| Provider | Q1 2026 Market Share | Q1 2025 Market Share (YoY) |\n|---|---|---|\n| **Amazon Web Services (AWS)** | **28%** | 29% |\n| **Microsoft Azure** | **21%** | 22% |\n| **Google Cloud** | **14%** | 12% |\n| **Big Three Combined** | **63%** | \u2014 |\n\n### Key Context\n- The **Big Three together held ~63% of total public cloud spend** (with other sources noting the top three collectively held **67%** of the broader market including additional providers) [1][2].\n- Total global enterprise spending on cloud infrastructure services reached **~$129 billion** in Q1 2026, representing **35% year-over-year growth** \u2014 the ninth consecutive quarter of accelerating growth [1][2].\n- While **AWS maintained the largest share**, both **Microsoft Azure and Google Cloud posted higher growth rates** than Amazon during the quarter [1].\n- Google Cloud was the **only one of the three to grow its share year-over-year** (from 12% \u2192 14%), while AWS and Azure each dipped slightly [2].\n\n---\n**Firm:** Synergy Research Group\n**Quarter:** Q1 2026 (reported April 29, 2026)",
+  "citations": [
+    {
+      "id": 1,
+      "url": "https://www.srgresearch.com/articles/cloud-market-annual-revenue-run-rate-topped-half-a-trillion-dollars-in-q1-as-growth-surge-continues",
+      "title": "Cloud Market Annual Revenue Run Rate Topped Half a Trillion Dollars in Q1 as Growth Surge Continues \u2014 Synergy Research Group, April 29, 2026"
+    },
+    {
+      "id": 2,
+      "url": "https://www.crn.com/news/cloud/2026/cloud-market-share-q1-2026-aws-microsoft-google-battling-in-ai-era",
+      "title": "Cloud Market Share Q1 2026: AWS, Microsoft, Google Battling In AI Era \u2014 CRN, May 4, 2026"
+    }
+  ],
+  "confidence": "high \u2014 Figures are consistent across the primary source (Synergy Research Group's own press release) and a major corroborating outlet (CRN), both explicitly attributing the data to Synergy Research Group for Q1 2026.",
+  "scores": {
+    "correct_mean": 1.0,
+    "correct_median": 1.0,
+    "faithful_mean": 0.95,
+    "faithful_median": 1.0,
+    "precision_mean": 1.0,
+    "precision_median": 1.0,
+    "correct": 1.0,
+    "faithful": 1.0,
+    "precision": 1.0,
+    "verdict": "PASS",
+    "verdict_mean": "PASS",
+    "verdict_median": "PASS",
+    "cited": true,
+    "keyword_hit": true,
+    "panel_size": 3,
+    "per_judge": [
+      {
+        "judge": "gpt-5.4",
+        "provider": "openai",
+        "correct": 1.0,
+        "faithful": 0.85,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "The answer correctly identifies Synergy Research Group and Q1 2026, with AWS 28%, Azure 21%, and Google Cloud 14%, matching the ground truth. It is mostly grounded in the retrieved evidence, though it adds a potentially confusing unsupported claim about the big three holding 63% alongside evidence showing 67% of the public cloud market. Sources are explicitly referenced."
+      },
+      {
+        "judge": "gemini-3.5-flash",
+        "provider": "gemini",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "The agent's answer is exceptionally accurate and perfectly matches the ground-truth values. All claims, including the market shares (AWS 28%, Azure 21%, Google Cloud 14%) and the quarter (Q1 2026), are fully supported by the retrieved evidence and properly cited."
+      },
+      {
+        "judge": "opus-4.8",
+        "provider": "anthropic",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "Agent correctly reports Q1 2026 Synergy figures (AWS 28%, Azure 21%, Google 14%), names firm and quarter, and all claims are grounded in retrieved evidence including the $129B/35% YoY and YoY comparisons. Citations present."
+      }
+    ]
+  },
+  "stopped_reason": "model_finished",
+  "steps": 3,
+  "reads": 2,
+  "tool_calls": 4,
+  "apify_runs": 0,
+  "tokens": 16235,
+  "elapsed": 45.7
+}

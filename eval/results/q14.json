@@ -1,0 +1,96 @@
+{
+  "id": "q14",
+  "goal": "Compare the entry individual paid tier monthly price (billed monthly, USD) of three design/creative SaaS tools \u2014 Figma (Professional/full seat), Canva Pro, and Adobe Express Premium \u2014 and determine which is the cheapest and its price.",
+  "kind": "synthesis",
+  "expected": "Adobe Express Premium is the cheapest at $9.99/month, below Figma Professional ($16/month) and Canva Pro ($18/month), with no ties, as of 2026-06-18.",
+  "answer": "# Pricing Comparison: Figma Professional vs. Canva Pro vs. Adobe Express Premium\n*(Individual paid tier, billed monthly, USD)*\n\n| Tool | Plan Name | Monthly Price (billed monthly) |\n|---|---|---|\n| **Figma** | Professional (full seat) | **$16.00 / mo** |\n| **Canva** | Pro | **$12.99\u2013$18.00 / mo** \u26a0\ufe0f |\n| **Adobe Express** | Premium | **$9.99 / mo** |\n\n---\n\n## Price Details\n\n### 1. \ud83c\udfa8 Figma Professional \u2014 $16.00/month\nFigma's Professional full-seat tier costs **$16/month** when billed monthly [1]. It includes unlimited files and projects, team-wide design libraries, advanced Dev Mode inspection, and 3,000 AI credits per month.\n\n### 2. \ud83d\udd8c\ufe0f Canva Pro \u2014 $12.99\u2013$18.00/month \u26a0\ufe0f\nThis is the most uncertain figure. Multiple sources conflict:\n- **$12.99/month** \u2014 cited by Miracamp (described as current 2026 USA pricing) [3]\n- **$15.00/month** \u2014 cited by itopvpn/Orb Billing [4]\n- **$18.00/month** \u2014 cited by Style Factory (updated May 2026) [2], suggesting a possible recent price increase\n\nThe Canva official pricing page was blocked during this research, so the exact current price could not be directly verified. The most recently updated third-party source (Style Factory, May 2026) lists **$18/month**, but other sources still show $12.99.\n\n### 3. \u270d\ufe0f Adobe Express Premium \u2014 $9.99/month\nAdobe Express Premium costs **$9.99/month** when billed monthly with no annual commitment [5][6]. It includes 250 generative AI credits, 100GB cloud storage, 200M+ Adobe Stock assets, and social scheduling tools.\n\n---\n\n## \ud83c\udfc6 Winner: Adobe Express Premium at **$9.99/month**\n\n**Adobe Express Premium is the cheapest** of the three at **$9.99/month** (billed monthly) \u2014 significantly less than Figma's $16/month and Canva Pro's $12.99\u2013$18/month, regardless of which Canva price is current.\n\n> \u26a0\ufe0f **Caveat on Canva Pro pricing:** Third-party sources conflict on Canva's current monthly price. Canva's official pricing page was inaccessible during this research. Verify the latest price at [canva.com/pricing](https://www.canva.com/pricing) before making a purchasing decision.",
+  "citations": [
+    {
+      "id": 1,
+      "url": "https://www.figma.com/pricing/",
+      "note": "Official Figma pricing page \u2014 Professional full seat is $16/month billed monthly"
+    },
+    {
+      "id": 2,
+      "url": "https://www.stylefactoryproductions.com/blog/canva-pricing",
+      "note": "Style Factory (updated May 2026) \u2014 Canva Pro at $18/month billed monthly"
+    },
+    {
+      "id": 3,
+      "url": "https://www.miracamp.com/learn/canva/pricing-plans",
+      "note": "Miracamp (2026) \u2014 Canva Pro at $12.99/month billed monthly in the USA"
+    },
+    {
+      "id": 4,
+      "url": "https://www.itopvpn.com/blog/buy-canva-pro-cheap-7524",
+      "note": "itopvpn \u2014 Canva Pro individual monthly plan at $15/month"
+    },
+    {
+      "id": 5,
+      "url": "https://toolrom.com/how-much-does-adobe-express-cost/",
+      "note": "Toolrom \u2014 Adobe Express Premium at $9.99/month billed monthly, no annual commitment"
+    },
+    {
+      "id": 6,
+      "url": "https://photutorial.com/adobe-express-price/",
+      "note": "Photutorial \u2014 Adobe Express Premium at $9.99/month billed monthly in USD"
+    }
+  ],
+  "confidence": "medium \u2014 Figma ($16/mo) was confirmed directly from the official page. Adobe Express ($9.99/mo) was confirmed across two independent third-party sources that cite the official Adobe pricing page. Canva Pro's price is uncertain due to conflicting third-party sources ($12.99 to $18/mo) and the official Canva pricing page being inaccessible. However, the winner (Adobe Express Premium) is clear regardless of which Canva price is accurate.",
+  "scores": {
+    "correct_mean": 0.833,
+    "correct_median": 1.0,
+    "faithful_mean": 1.0,
+    "faithful_median": 1.0,
+    "precision_mean": 0.867,
+    "precision_median": 0.9,
+    "correct": 1.0,
+    "faithful": 1.0,
+    "precision": 0.9,
+    "verdict": "PASS",
+    "verdict_mean": "PARTIAL",
+    "verdict_median": "PASS",
+    "cited": true,
+    "keyword_hit": true,
+    "panel_size": 3,
+    "per_judge": [
+      {
+        "judge": "gpt-5.4",
+        "provider": "openai",
+        "correct": 0.5,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 0.7,
+        "verdict": "PARTIAL",
+        "reasoning": "The answer correctly identifies Adobe Express Premium as the cheapest at $9.99/month and gives Figma at $16/month, but it does not cleanly determine a single Canva price despite the ground truth requiring $18/month. Its claims are grounded in the retrieved evidence, including the conflicting Canva sources, and it provides citations."
+      },
+      {
+        "judge": "gemini-3.5-flash",
+        "provider": "gemini",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "The agent correctly compared the pricing of the three tools, identified Adobe Express Premium as the cheapest at $9.99/month, and accurately explained the discrepancy in Canva Pro's pricing using the retrieved evidence."
+      },
+      {
+        "judge": "opus-4.8",
+        "provider": "anthropic",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 0.9,
+        "verdict": "PASS",
+        "reasoning": "The answer correctly identifies Adobe Express Premium as cheapest at $9.99/month, with Figma at $16 and Canva matching the ground-truth $18 (from the most recently updated source). All key prices are grounded in retrieved evidence and cited; the Canva range/caveat is appropriate given conflicting sources, and the final conclusion is correct regardless."
+      }
+    ]
+  },
+  "stopped_reason": "budget: max tool calls (16) reached",
+  "steps": 8,
+  "reads": 6,
+  "tool_calls": 17,
+  "apify_runs": 1,
+  "tokens": 73834,
+  "elapsed": 163.2
+}

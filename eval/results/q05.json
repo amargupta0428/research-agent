@@ -1,0 +1,78 @@
+{
+  "id": "q05",
+  "goal": "Determine the amount raised, valuation, and lead investor of Safe Superintelligence (SSI)'s funding round reported in April 2025.",
+  "kind": "fact",
+  "expected": "Safe Superintelligence (Ilya Sutskever's startup) raised an additional $2 billion at a $32 billion valuation, reported April 2025, in a round led by Greenoaks (reported ~$500 million), with backers including Andreessen Horowitz, Lightspeed, DST Global, Alphabet, and Nvidia.",
+  "answer": "## Safe Superintelligence (SSI) \u2014 April 2025 Funding Round\n\nHere are the key details of the funding round reported in April 2025:\n\n| Detail | Value |\n|---|---|\n| **Amount Raised** | **$2 billion** |\n| **Post-Money Valuation** | **$32 billion** |\n| **Lead Investor** | **Greenoaks Capital Partners** ($500M commitment) |\n\n### Additional Context\n- **Other participants** in the round included Andreessen Horowitz, Lightspeed Venture Partners, DST Global, Alphabet, and Nvidia [1].\n- This represented a **sixfold increase** in valuation compared to SSI's previous round in September 2024, when the company raised $1 billion at a $5 billion valuation [1][2].\n- SSI was founded in June 2024 by **Ilya Sutskever** (former chief scientist at OpenAI), **Daniel Gross**, and **Daniel Levy** [1].\n- This was SSI's second major fundraise in fewer than seven months [2].",
+  "citations": [
+    {
+      "id": 1,
+      "url": "https://www.calcalistech.com/ctechnews/article/hjfywdtajl",
+      "title": "Ilya Sutskever's Safe Superintelligence raises $2B at $32B valuation \u2013 Calcalist Tech",
+      "note": "Details on amount raised, valuation, lead investor (Greenoaks, $500M), other investors, and valuation comparison to prior round."
+    },
+    {
+      "id": 2,
+      "url": "https://news.crunchbase.com/business/biggest-rounds-april-2025-safe-superintelligence-plaid/",
+      "title": "The 10 Biggest Rounds Of April: Safe Superintelligence's $2B \u2013 Crunchbase News",
+      "note": "Confirms $2B raised, $32B valuation, and Greenoaks Capital Partners as lead investor; notes it was SSI's second large raise in under 7 months."
+    }
+  ],
+  "confidence": "high \u2014 both data points confirmed by two independent, authoritative sources (Calcalist Tech and Crunchbase) with full agreement on all three key figures.",
+  "scores": {
+    "correct_mean": 1.0,
+    "correct_median": 1.0,
+    "faithful_mean": 1.0,
+    "faithful_median": 1.0,
+    "precision_mean": 1.0,
+    "precision_median": 1.0,
+    "correct": 1.0,
+    "faithful": 1.0,
+    "precision": 1.0,
+    "verdict": "PASS",
+    "verdict_mean": "PASS",
+    "verdict_median": "PASS",
+    "cited": true,
+    "keyword_hit": true,
+    "panel_size": 3,
+    "per_judge": [
+      {
+        "judge": "gpt-5.4",
+        "provider": "openai",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "The answer matches the ground truth: $2B raised at a $32B valuation, led by Greenoaks/Greenoaks Capital Partners. All key claims are supported by the retrieved Calcalist and Crunchbase evidence, and the answer includes citations."
+      },
+      {
+        "judge": "gemini-3.5-flash",
+        "provider": "gemini",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "The agent perfectly identified the amount raised, valuation, and lead investor of the April 2025 funding round. All facts and additional context in the answer are fully supported by the retrieved evidence."
+      },
+      {
+        "judge": "opus-4.8",
+        "provider": "anthropic",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "Answer matches ground truth exactly ($2B, $32B valuation, Greenoaks lead at $500M, correct backers) and all claims are supported by the retrieved evidence with citations."
+      }
+    ]
+  },
+  "stopped_reason": "model_finished",
+  "steps": 3,
+  "reads": 2,
+  "tool_calls": 3,
+  "apify_runs": 0,
+  "tokens": 13414,
+  "elapsed": 36.5
+}

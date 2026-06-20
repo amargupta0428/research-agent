@@ -1,0 +1,78 @@
+{
+  "id": "q07",
+  "goal": "Whom did Intel appoint as its permanent CEO in 2025, on what announcement date, with what effective date, and whom did he succeed?",
+  "kind": "fact",
+  "expected": "Intel appointed Lip-Bu Tan (former Cadence Design Systems CEO) as CEO, announced March 12, 2025, effective March 18, 2025. He succeeded Interim Co-CEOs David Zinsner and Michelle (MJ) Johnston Holthaus.",
+  "answer": "## Intel's 2025 Permanent CEO Appointment\n\n**Lip-Bu Tan** was appointed as Intel's permanent CEO in 2025 [1][2].\n\n| Detail | Information |\n|---|---|\n| **Person appointed** | Lip-Bu Tan |\n| **Announcement date** | Wednesday, **March 12, 2025** |\n| **Effective date** | **March 18, 2025** |\n| **Immediate predecessors (succeeded)** | Interim co-CEOs **David Zinsner** and **Michelle Johnston Holthaus** |\n| **Original predecessor** | **Pat Gelsinger**, who was ousted/retired in early December 2024 |\n\n### Key Context\n- After Pat Gelsinger departed Intel in **December 2024**, the company was led temporarily by **two interim co-CEOs**: CFO **David Zinsner** and Intel Products CEO **Michelle Johnston Holthaus** [1][2].\n- Lip-Bu Tan formally replaced this interim co-CEO arrangement when he officially took the helm on **March 18, 2025** [2].\n- Upon Tan's appointment, Zinsner returned to his CFO role and Holthaus continued leading Intel Products [1].\n- Tan is a semiconductor industry veteran who previously served as CEO of **Cadence Design Systems** (2009\u20132021) and had also served on Intel's board of directors [1][2].",
+  "citations": [
+    {
+      "id": 1,
+      "url": "https://www.cnbc.com/2025/03/12/intel-appoints-lip-bu-tan-as-new-ceo-stock-up-11percent.html",
+      "title": "Intel appoints Lip-Bu Tan as CEO to orchestrate turnaround at struggling chipmaker \u2013 CNBC",
+      "note": "Confirms announcement date of March 12, 2025, Tan's appointment, and that he succeeded interim co-CEOs Zinsner and Holthaus after Gelsinger's ouster in December 2024."
+    },
+    {
+      "id": 2,
+      "url": "https://www.neowin.net/news/intel-appoints-lip-bu-tan-as-its-new-ceo/",
+      "title": "Intel appoints Lip-Bu Tan as its new CEO \u2013 Neowin",
+      "note": "Confirms effective date of March 18, 2025, full names of interim co-CEOs succeeded, and Gelsinger's departure in early December 2024."
+    }
+  ],
+  "confidence": "high \u2014 All four key facts (person, announcement date, effective date, predecessor(s)) are confirmed by two independent, credible sources (CNBC and Neowin) that were fully read during this research session.",
+  "scores": {
+    "correct_mean": 1.0,
+    "correct_median": 1.0,
+    "faithful_mean": 0.983,
+    "faithful_median": 1.0,
+    "precision_mean": 1.0,
+    "precision_median": 1.0,
+    "correct": 1.0,
+    "faithful": 1.0,
+    "precision": 1.0,
+    "verdict": "PASS",
+    "verdict_mean": "PASS",
+    "verdict_median": "PASS",
+    "cited": true,
+    "keyword_hit": true,
+    "panel_size": 3,
+    "per_judge": [
+      {
+        "judge": "gpt-5.4",
+        "provider": "openai",
+        "correct": 1.0,
+        "faithful": 0.95,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "The answer matches the ground truth: Lip-Bu Tan, announced March 12, 2025, effective March 18, 2025, succeeding interim co-CEOs David Zinsner and Michelle Johnston Holthaus. These points are supported by the retrieved CNBC and Neowin evidence; only minor extra wording about Pat Gelsinger adds context beyond the core question but is still supported."
+      },
+      {
+        "judge": "gemini-3.5-flash",
+        "provider": "gemini",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "The agent answer is completely correct and fully supported by the retrieved evidence, with proper citations for all key claims."
+      },
+      {
+        "judge": "opus-4.8",
+        "provider": "anthropic",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "Answer correctly states Lip-Bu Tan, announced March 12, effective March 18, 2025, succeeding interim co-CEOs Zinsner and Holthaus; all claims are grounded in retrieved evidence and properly cited."
+      }
+    ]
+  },
+  "stopped_reason": "model_finished",
+  "steps": 6,
+  "reads": 2,
+  "tool_calls": 5,
+  "apify_runs": 0,
+  "tokens": 28043,
+  "elapsed": 54.4
+}

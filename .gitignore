@@ -1,0 +1,12 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Ad-hoc local runs (the curated proof traces live in examples/, which IS committed).
+runs/
+
+# NOTE: eval/results/ is intentionally COMMITTED. It holds the per-question scores,
+# full traces, and every judge's vote behind EVAL.md. Do not ignore it.

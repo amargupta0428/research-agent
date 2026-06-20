@@ -1,0 +1,125 @@
+# Eval set: ~20 company/market research questions with known/verifiable answers.
+# `keywords` = strings that should appear in a correct answer (case-insensitive,
+# used for a cheap programmatic correctness signal). `expected` is the ground truth
+# handed to the independent judge model. `kind`: fact = single verifiable fact,
+# market = open competitor/market question scored mostly by the judge on keywords.
+
+- id: q01
+  goal: "Who founded Stripe?"
+  kind: fact
+  expected: "Patrick Collison and John Collison (the Collison brothers)."
+  keywords: ["Collison"]
+
+- id: q02
+  goal: "What year was Airbnb founded?"
+  kind: fact
+  expected: "2008."
+  keywords: ["2008"]
+
+- id: q03
+  goal: "Where is Shopify headquartered?"
+  kind: fact
+  expected: "Ottawa, Ontario, Canada."
+  keywords: ["Ottawa"]
+
+- id: q04
+  goal: "Who is the current CEO of Microsoft?"
+  kind: fact
+  expected: "Satya Nadella."
+  keywords: ["Nadella"]
+
+- id: q05
+  goal: "Which company acquired GitHub, and in what year?"
+  kind: fact
+  expected: "Microsoft, in 2018."
+  keywords: ["Microsoft", "2018"]
+
+- id: q06
+  goal: "Who are the main competitors of Slack in team messaging?"
+  kind: market
+  expected: "Microsoft Teams is the primary competitor; others include Discord, Google Chat, Mattermost, and Zoom Team Chat."
+  keywords: ["Microsoft Teams"]
+
+- id: q07
+  goal: "What is Databricks best known for as a product?"
+  kind: fact
+  expected: "A unified data analytics / lakehouse platform built around Apache Spark."
+  keywords: ["lakehouse"]
+
+- id: q08
+  goal: "Name the co-founders of OpenAI."
+  kind: fact
+  expected: "Founders include Sam Altman, Elon Musk, Greg Brockman, Ilya Sutskever, Wojciech Zaremba, and John Schulman."
+  keywords: ["Altman"]
+
+- id: q09
+  goal: "What year did Zoom (Zoom Video Communications) go public?"
+  kind: fact
+  expected: "2019."
+  keywords: ["2019"]
+
+- id: q10
+  goal: "Which company owns Instagram?"
+  kind: fact
+  expected: "Meta Platforms (formerly Facebook)."
+  keywords: ["Meta"]
+
+- id: q11
+  goal: "Who are Notion's primary competitors?"
+  kind: market
+  expected: "Coda, Airtable, Evernote, Confluence, ClickUp, and Obsidian are commonly cited competitors."
+  keywords: ["Coda"]
+
+- id: q12
+  goal: "What is Snowflake's core product?"
+  kind: fact
+  expected: "A cloud-based data warehouse / data cloud platform."
+  keywords: ["data warehouse"]
+
+- id: q13
+  goal: "Who is the founder and CEO of Nvidia?"
+  kind: fact
+  expected: "Jensen Huang."
+  keywords: ["Huang"]
+
+- id: q14
+  goal: "What year was SpaceX founded?"
+  kind: fact
+  expected: "2002."
+  keywords: ["2002"]
+
+- id: q15
+  goal: "Which payment companies compete most directly with Stripe?"
+  kind: market
+  expected: "Adyen, PayPal (incl. Braintree), Square/Block, and Checkout.com are the closest competitors."
+  keywords: ["Adyen"]
+
+- id: q16
+  goal: "Where is Spotify headquartered?"
+  kind: fact
+  expected: "Stockholm, Sweden."
+  keywords: ["Stockholm"]
+
+- id: q17
+  goal: "Which company acquired LinkedIn, and in what year?"
+  kind: fact
+  expected: "Microsoft, in 2016."
+  keywords: ["Microsoft", "2016"]
+
+- id: q18
+  goal: "Besides Jira, name a major product made by Atlassian."
+  kind: fact
+  expected: "Confluence (others: Trello, Bitbucket, Opsgenie)."
+  keywords: ["Confluence"]
+
+- id: q19
+  goal: "Who founded Canva?"
+  kind: fact
+  expected: "Melanie Perkins, Cliff Obrecht, and Cameron Adams."
+  keywords: ["Perkins"]
+
+- id: q20
+  goal: "What market does Klarna primarily operate in?"
+  kind: market
+  expected: "Buy now, pay later (BNPL) / fintech payments."
+  keywords: ["buy now"]

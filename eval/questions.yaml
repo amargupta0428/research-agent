@@ -1,0 +1,169 @@
+# Eval set v2 — 20 HARD, un-memorizable company/market research questions.
+# Every question targets facts a frontier LLM CANNOT answer from parametric memory:
+# recent (2025-2026) funding/M&A/exec/earnings events, niche disclosed figures, or
+# multi-source comparisons. Each answer was web-verified against the listed sources.
+#
+# Fields: id, goal, kind (fact|synthesis|market), expected (ground truth, "as of" dated
+# where time-sensitive), keywords (high-precision substrings for the programmatic check),
+# why_hard (why memory can't answer it), sources (URLs used to verify the ground truth).
+# The agent is scored against `expected`/`keywords`; `sources`/`why_hard` document the set.
+
+- id: q01
+  goal: "Identify the lead investor and the exact post-money valuation of Anthropic's Series F funding round announced in September 2025, and the total amount raised."
+  kind: fact
+  expected: "Anthropic raised $13 billion in its Series F, announced September 2, 2025, at a $183 billion post-money valuation. The round was led by ICONIQ, co-led by Fidelity Management & Research Company and Lightspeed Venture Partners."
+  keywords: ["$183 billion", "ICONIQ", "$13 billion"]
+  why_hard: "Requires the exact post-money figure and the specific lead investor (ICONIQ), a precise fact disclosed in September 2025 and easily confused with prior or later Anthropic rounds."
+  sources: ["https://www.anthropic.com/news/anthropic-raises-series-f-at-usd183b-post-money-valuation", "https://techcrunch.com/2025/09/02/anthropic-raises-13b-series-f-at-183b-valuation/"]
+
+- id: q02
+  goal: "Determine the size, valuation, and lead investor of Mistral AI's Series C funding round announced in September 2025, including the lead investor's contribution."
+  kind: fact
+  expected: "Mistral AI raised a EUR 1.7 billion Series C announced September 9, 2025, at a EUR 11.7 billion (about $14 billion) post-money valuation. It was led by Dutch chip-equipment maker ASML, which invested EUR 1.3 billion for roughly an 11% stake."
+  keywords: ["ASML", "1.7 billion", "11.7 billion"]
+  why_hard: "ASML (a chip-equipment maker, not a VC) as lead investor is counterintuitive, and the euro-denominated figures plus the EUR 1.3B sub-amount are specific and post-cutoff."
+  sources: ["https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai/", "https://sifted.eu/articles/mistral-confirms-series-c-asml"]
+
+- id: q03
+  goal: "Find the seed round size, valuation, and lead investor of Mira Murati's Thinking Machines Lab, as confirmed when the round officially closed in July 2025."
+  kind: fact
+  expected: "Thinking Machines Lab closed a $2 billion seed round (officially July 14, announced July 15, 2025) at a $12 billion valuation, led by Andreessen Horowitz, with participation from Nvidia, Accel, ServiceNow, Cisco, AMD, and Jane Street."
+  keywords: ["$12 billion", "$2 billion", "Andreessen Horowitz"]
+  why_hard: "The final valuation ($12B) differs from earlier widely-reported June figures ($10B), so a model must distinguish the closed-round number from preliminary reports."
+  sources: ["https://techcrunch.com/2025/07/15/mira-muratis-thinking-machines-lab-is-worth-12b-in-seed-round/", "https://en.wikipedia.org/wiki/Thinking_Machines_Lab"]
+
+- id: q04
+  goal: "Identify the IPO offer price per share, gross proceeds, and exchange/ticker for CoreWeave's March 2025 initial public offering."
+  kind: fact
+  expected: "CoreWeave priced its IPO at $40.00 per share on March 27, 2025, selling 37.5 million Class A shares to raise about $1.5 billion (gross), listing on the Nasdaq Global Select Market under ticker CRWV; shares began trading March 28, 2025. The $40 price was below the expected $47-$55 range."
+  keywords: ["$40", "CRWV", "$1.5 billion"]
+  why_hard: "The $40 price came in below the marketed $47-$55 range and the deal was downsized, so the exact priced figure and proceeds require the final pricing release, not the preliminary range."
+  sources: ["https://www.coreweave.com/news/coreweave-announces-pricing-of-initial-public-offering", "https://www.cnbc.com/2025/03/28/coreweave-starts-trading-on-nasdaq-at-per-share.html"]
+
+- id: q05
+  goal: "Determine the amount raised, valuation, and lead investor of Safe Superintelligence (SSI)'s funding round reported in April 2025."
+  kind: fact
+  expected: "Safe Superintelligence (Ilya Sutskever's startup) raised an additional $2 billion at a $32 billion valuation, reported April 2025, in a round led by Greenoaks (reported ~$500 million), with backers including Andreessen Horowitz, Lightspeed, DST Global, Alphabet, and Nvidia."
+  keywords: ["$32 billion", "Greenoaks", "$2 billion"]
+  why_hard: "SSI is pre-product and secretive; the lead investor Greenoaks and the jump to a $32B valuation are specific facts not derivable from general knowledge and post-cutoff."
+  sources: ["https://techcrunch.com/2025/04/12/openai-co-founder-ilya-sutskevers-safe-superintelligence-reportedly-valued-at-32b/", "https://news.crunchbase.com/business/biggest-rounds-april-2025-safe-superintelligence-plaid/"]
+
+- id: q06
+  goal: "On what exact date did Google complete (close) its acquisition of cloud security company Wiz, and what was the all-cash purchase price?"
+  kind: fact
+  expected: "Google completed its acquisition of Wiz on March 11, 2026, for $32 billion in an all-cash deal (announced March 18, 2025; closed roughly a year later after US and EU regulatory clearance)."
+  keywords: ["$32 billion", "March 11, 2026"]
+  why_hard: "The deal CLOSED on March 11, 2026 — after an early-2026 training cutoff — so the close date and completion cannot be memorized, only the original announcement."
+  sources: ["https://techcrunch.com/2026/03/11/google-completes-32b-acquisition-of-wiz/", "https://www.cybersecuritydive.com/news/google-32-billion-acquisition-wiz/814437/"]
+
+- id: q07
+  goal: "Whom did Intel appoint as its permanent CEO in 2025, on what announcement date, with what effective date, and whom did he succeed?"
+  kind: fact
+  expected: "Intel appointed Lip-Bu Tan (former Cadence Design Systems CEO) as CEO, announced March 12, 2025, effective March 18, 2025. He succeeded Interim Co-CEOs David Zinsner and Michelle (MJ) Johnston Holthaus."
+  keywords: ["Lip-Bu Tan", "March 18, 2025"]
+  why_hard: "Requires distinguishing the March 12 announcement from the March 18 effective date and naming the two interim co-CEOs he replaced, not just the prior permanent CEO."
+  sources: ["https://www.intc.com/news-events/press-releases/detail/1730/intel-appoints-lip-bu-tan-as-chief-executive-officer", "https://techcrunch.com/2025/03/12/intel-appoints-lip-bu-tan-as-its-next-ceo/"]
+
+- id: q08
+  goal: "How much did OpenAI pay to acquire Jony Ive's AI hardware startup 'io', what was the deal structure, and on what date did the acquisition close?"
+  kind: fact
+  expected: "OpenAI acquired io (Jony Ive's AI device startup) in an all-stock deal valued at about $6.5 billion (announced May 21, 2025); the merger completion was announced July 9, 2025. Ive took on creative/design responsibilities across OpenAI and io while LoveFrom remained independent."
+  keywords: ["$6.5 billion", "July 9, 2025"]
+  why_hard: "The deal value is often misreported as $6.4B vs $6.5B, and the all-stock close date (July 9, 2025) is separate from the May 21 announcement."
+  sources: ["https://www.bloomberg.com/news/articles/2025-07-09/openai-closes-6-5-billion-deal-to-buy-jony-ive-s-device-startup", "https://techcrunch.com/2025/05/21/jony-ive-to-lead-openais-design-work-following-6-5b-acquisition-of-his-company/"]
+
+- id: q09
+  goal: "Identify the size of Nvidia's announced investment in OpenAI, the gigawatts of systems to be deployed, the announcement date, and the platform used for the first gigawatt."
+  kind: fact
+  expected: "On September 22, 2025, Nvidia and OpenAI announced a strategic partnership: Nvidia intends to invest up to $100 billion in OpenAI to deploy at least 10 gigawatts of Nvidia systems; the first gigawatt comes online in H2 2026 on the Nvidia Vera Rubin platform."
+  keywords: ["$100 billion", "10 gigawatts", "September 22, 2025"]
+  why_hard: "Ties together four disclosed terms (amount, capacity, date, Vera Rubin platform) from a single September 2025 announcement that post-dates an early-2026 cutoff's reliable recall."
+  sources: ["https://nvidianews.nvidia.com/news/openai-and-nvidia-announce-strategic-partnership-to-deploy-10gw-of-nvidia-systems", "https://www.cnbc.com/2025/09/22/nvidia-openai-data-center.html"]
+
+- id: q10
+  goal: "Compare the standard individual paid 'Pro' tier monthly price (billed monthly, USD) of three AI coding assistants — GitHub Copilot Pro, Cursor Pro, and Windsurf Pro — and determine which is the cheapest and its price."
+  kind: synthesis
+  expected: "GitHub Copilot Pro is the cheapest at $10/month, half the price of both Cursor Pro ($20/month) and Windsurf Pro ($20/month, which are tied), as of 2026-06-18."
+  keywords: ["GitHub Copilot Pro", "$10"]
+  why_hard: "Requires pulling and comparing the current monthly-billed price from three separate official vendor pricing pages and excluding annual-discount figures."
+  sources: ["https://github.com/features/copilot/plans", "https://docs.github.com/en/copilot/about-github-copilot/plans-for-github-copilot", "https://cursor.com/pricing"]
+
+- id: q11
+  goal: "Compare the standard API input price per 1 million tokens (base/standard tier) for three frontier LLMs — Google Gemini 2.5 Pro, Anthropic Claude Opus 4.x, and OpenAI's current GPT-5 flagship — and determine which has the cheapest input price and the figure."
+  kind: synthesis
+  expected: "Google Gemini 2.5 Pro has the cheapest input price at $1.25 per 1M tokens (prompts <=200k), roughly 4x cheaper than Claude Opus 4.8 ($5/1M) and OpenAI GPT-5.5 ($5/1M, tied), as of 2026-06-18."
+  keywords: ["Gemini 2.5 Pro", "$1.25"]
+  why_hard: "Requires reconciling three vendors' official API pricing pages, navigating context-length tiering (Gemini's <=200k tier), and identifying the current flagship model names."
+  sources: ["https://ai.google.dev/gemini-api/docs/pricing", "https://platform.claude.com/docs/en/about-claude/pricing", "https://developers.openai.com/api/docs/pricing"]
+
+- id: q12
+  goal: "Compare the standard API output price per 1 million tokens (base/standard tier, context <=200k) for three frontier LLMs — OpenAI's current GPT-5 flagship, Anthropic Claude Opus 4.x, and Google Gemini 2.5 Pro — and determine which has the most expensive output price and the figure."
+  kind: synthesis
+  expected: "OpenAI's GPT-5.5 has the most expensive output at $30 per 1M tokens, ahead of Claude Opus 4.8 ($25/1M) and Gemini 2.5 Pro ($10/1M); all three are distinct with no ties, as of 2026-06-18."
+  keywords: ["GPT-5.5", "$30"]
+  why_hard: "Requires gathering current output-token prices from three separate official pricing pages and confirming the ordering with no ties."
+  sources: ["https://developers.openai.com/api/docs/pricing", "https://platform.claude.com/docs/en/about-claude/pricing", "https://ai.google.dev/gemini-api/docs/pricing"]
+
+- id: q13
+  goal: "Compare the most recent disclosed/reported standalone private valuation of four AI companies — OpenAI, Anthropic, xAI, and Mistral AI — and determine which has the highest valuation and the figure."
+  kind: synthesis
+  expected: "Anthropic has the highest valuation at $965 billion (Series H, announced 2026-05-28), ahead of OpenAI ($852 billion, March 2026 round), xAI ($230 billion, Series E Jan 2026), and Mistral AI (~EUR 11.7B / ~$12-13B confirmed Series C), as of 2026-06-18."
+  keywords: ["Anthropic", "$965 billion"]
+  why_hard: "Requires gathering each company's latest funding-round valuation from separate primary/press sources and comparing them on a consistent standalone-company basis; Anthropic's figure post-dates a 2026 cutoff."
+  sources: ["https://www.anthropic.com/news/series-h", "https://www.cnbc.com/2026/05/28/anthropic-open-ai-startup-value.html"]
+
+- id: q14
+  goal: "Compare the entry individual paid tier monthly price (billed monthly, USD) of three design/creative SaaS tools — Figma (Professional/full seat), Canva Pro, and Adobe Express Premium — and determine which is the cheapest and its price."
+  kind: synthesis
+  expected: "Adobe Express Premium is the cheapest at $9.99/month, below Figma Professional ($16/month) and Canva Pro ($18/month), with no ties, as of 2026-06-18."
+  keywords: ["Adobe Express", "$9.99"]
+  why_hard: "Requires pulling the current monthly-billed entry-tier price from three different official pricing pages and avoiding annual-billing figures."
+  sources: ["https://www.adobe.com/express/pricing", "https://www.figma.com/pricing/", "https://www.canva.com/pricing/"]
+
+- id: q15
+  goal: "Compare the standard individual monthly subscription price (billed monthly, USD) of four consumer AI chatbot tiers — ChatGPT Plus, Claude Pro, Google AI Pro (formerly Gemini Advanced), and Perplexity Pro — and determine which single product is the cheapest and its price."
+  kind: synthesis
+  expected: "Google AI Pro is the single cheapest at $19.99/month, just under ChatGPT Plus, Claude Pro, and Perplexity Pro, which are each $20/month (a three-way tie for the others), as of 2026-06-18."
+  keywords: ["Google AI Pro", "$19.99"]
+  why_hard: "Requires gathering the current billed-monthly price from four separate official pricing pages and distinguishing monthly from annual rates."
+  sources: ["https://gemini.google/subscriptions/", "https://openai.com/chatgpt/pricing/", "https://claude.com/pricing"]
+
+- id: q16
+  goal: "Find the exact number of jobs Microsoft cut in its July 2025 layoff round (the second major round of 2025, after the ~6,000 cut in May 2025), and the approximate percentage of its global workforce it represented."
+  kind: market
+  expected: "About 9,000 jobs cut, representing roughly 4% of Microsoft's ~228,000-person workforce, announced July 2, 2025. (Microsoft did not publish an exact figure; the separate '9,100' figure refers specifically to gaming-division cuts, not the company-wide round.) As of 2026-06-18."
+  keywords: ["9,000", "4%"]
+  why_hard: "The event post-dates many training cutoffs, Microsoft never published an exact count, and 2025's multiple rounds (6,000 / 9,000 / gaming 9,100) make a falsely-precise figure easy to hallucinate."
+  sources: ["https://www.cnbc.com/2025/07/02/microsoft-laying-off-about-9000-employees-in-latest-round-of-cuts.html", "https://www.bloomberg.com/news/articles/2025-07-02/microsoft-to-cut-9-000-workers-in-second-wave-of-major-layoffs"]
+
+- id: q17
+  goal: "Find Nvidia's Data Center segment revenue and total revenue for its fiscal Q1 2027 (the quarter ended April 26, 2026, reported May 20, 2026)."
+  kind: market
+  expected: "Record total revenue of $81.6 billion (up 85% YoY) with record Data Center revenue of $75.2 billion (up 92% YoY) for Q1 fiscal 2027 (quarter ended April 26, 2026), reported May 20, 2026. Within Data Center: compute $60.4B, networking $14.8B. As of 2026-06-18."
+  keywords: ["$75.2 billion", "$81.6 billion"]
+  why_hard: "Reported May 20, 2026 — after typical training cutoffs — so a model falls back to an older quarter (e.g. Q4 FY2026's $62.3B Data Center), and must not conflate the $75.2B full segment with the $60.4B compute sub-line. (NOTE: ground-truth corrected from a stale Q4 FY2026 version after the agent itself surfaced the more-recent quarter — see EVAL findings.)"
+  sources: ["https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000051/q1fy27pr.htm", "https://www.stocktitan.net/sec-filings/NVDA/8-k-nvidia-corp-reports-material-event-56086a88bbb4.html"]
+
+- id: q18
+  goal: "Find Spotify's Monthly Active Users (MAU) and Premium Subscriber figures disclosed in its most recent quarterly earnings as of June 2026, tied to the specific quarter and report date."
+  kind: market
+  expected: "761 million Monthly Active Users (up 12% YoY) and 293 million Premium Subscribers (up 9% YoY, +3M net adds) on revenue of EUR 4.5 billion, for Q1 2026, reported April 28, 2026. (Prior quarter Q4 2025 was 751M MAU / 290M Premium.) As of 2026-06-18."
+  keywords: ["761 million", "293 million"]
+  why_hard: "Disclosed April 28, 2026 after most cutoffs, and Spotify's MAU ticks up single-digit millions each quarter, so a model is likely to confabulate a stale value (e.g., 751M) rather than the exact 761M."
+  sources: ["https://newsroom.spotify.com/2026-04-28/spotify-q1-2026-earnings/", "https://variety.com/2026/music/news/spotify-q1-2026-earnings-revenue-total-premium-subscribers-1236731842/"]
+
+- id: q19
+  goal: "Find the global cloud infrastructure services market share for AWS, Microsoft Azure, and Google Cloud for the most recent reported quarter as of June 2026, per Synergy Research Group, naming the quarter and firm."
+  kind: market
+  expected: "Per Synergy Research Group for Q1 2026 (published April 29, 2026): AWS 28%, Microsoft Azure 21%, Google Cloud 14% (Big Three combined 63%; total quarterly spend $128.6B, +35% YoY). The prior Q3 2025 reading was AWS 29% / Azure 20% / Google 13%. As of 2026-06-18."
+  keywords: ["28%", "21%", "14%"]
+  why_hard: "These are quarterly point-in-time estimates that shift 1-2 points each quarter, so an LLM tends to conflate quarters or emit a stale/averaged number rather than the exact Q1 2026 triplet."
+  sources: ["https://www.srgresearch.com/articles/cloud-market-annual-revenue-run-rate-topped-half-a-trillion-dollars-in-q1-as-growth-surge-continues", "https://www.computerweekly.com/news/366642488/Cloud-revenues-up-35-YoY-in-a-hot-market-thats-accelerating"]
+
+- id: q20
+  goal: "Find Meta Platforms' 2026 capital expenditure guidance as originally disclosed on its Q4/full-year 2025 earnings call (late January 2026), including the exact range."
+  kind: market
+  expected: "$115 billion to $135 billion in 2026 capex (including principal payments on finance leases), as originally disclosed on Meta's Q4/FY2025 earnings call in late January 2026 (vs. $72.22B spent in 2025). Meta later RAISED this to $125-145 billion at Q1 2026 earnings; the original Q4 2025 figure is $115-135B. As of 2026-06-18."
+  keywords: ["$115", "$135 billion"]
+  why_hard: "Disclosed Jan-Feb 2026 near/after cutoffs, the four hyperscalers' large capex figures are easily confused, and Meta revised the number one quarter later — making the original $115-135B range and its date easy to get wrong."
+  sources: ["https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx", "https://finance.yahoo.com/news/meta-stock-climbs-on-q4-earnings-beat-plans-to-spend-as-much-as-135-billion-on-ai-build-out-in-2026-154456872.html"]

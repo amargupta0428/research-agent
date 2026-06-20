@@ -1,0 +1,78 @@
+{
+  "id": "q03",
+  "goal": "Find the seed round size, valuation, and lead investor of Mira Murati's Thinking Machines Lab, as confirmed when the round officially closed in July 2025.",
+  "kind": "fact",
+  "expected": "Thinking Machines Lab closed a $2 billion seed round (officially July 14, announced July 15, 2025) at a $12 billion valuation, led by Andreessen Horowitz, with participation from Nvidia, Accel, ServiceNow, Cisco, AMD, and Jane Street.",
+  "answer": "## Thinking Machines Lab Seed Round \u2014 July 2025\n\nWhen the round officially closed in **July 2025** (specifically July 14\u201315, 2025), the confirmed details were:\n\n| Detail | Confirmed Figure |\n|---|---|\n| **Round Size** | **$2 billion** |\n| **Post-Money Valuation** | **$12 billion** |\n| **Lead Investor** | **Andreessen Horowitz (a16z)** |\n\n### Additional Confirmed Details\n- **Co-investors** included Nvidia, Accel, ServiceNow, Cisco, AMD, Jane Street, and notably the government of Albania (which contributed $10 million) [1][2].\n- The $12 billion valuation represented an increase from the ~$10 billion figure that had been reported in June 2025, when outlets like the *Financial Times* indicated the round was nearing close [1].\n- The round is historically notable as one of the **largest seed rounds ever raised**, achieved before the company had shipped a single product [1][2].\n- Thinking Machines Lab was founded in **February 2025** by **Mira Murati**, the former CTO of OpenAI [1][2].\n\n[1] TechCrunch, July 15, 2025 \u2014 *\"Mira Murati's Thinking Machines Lab is worth $12B in seed round\"*\n[2] Wikipedia \u2014 *Thinking Machines Lab*",
+  "citations": [
+    {
+      "id": 1,
+      "url": "https://techcrunch.com/2025/07/15/mira-muratis-thinking-machines-lab-is-worth-12b-in-seed-round/",
+      "title": "Mira Murati's Thinking Machines Lab is worth $12B in seed round \u2013 TechCrunch",
+      "note": "Primary source reporting the round closed July 14-15, 2025, with $2B raised, $12B valuation, led by Andreessen Horowitz, with co-investors Nvidia, Accel, ServiceNow, Cisco, AMD, and Jane Street."
+    },
+    {
+      "id": 2,
+      "url": "https://en.wikipedia.org/wiki/Thinking_Machines_Lab",
+      "title": "Thinking Machines Lab \u2013 Wikipedia",
+      "note": "Corroborating source confirming $2B raised, $12B valuation, lead investor Andreessen Horowitz, and additional investors including Nvidia, AMD, Cisco, Jane Street, and the Albanian government."
+    }
+  ],
+  "confidence": "high \u2014 Two independent, credible sources (TechCrunch and Wikipedia citing multiple outlets) fully corroborate all three key data points: round size ($2B), valuation ($12B), and lead investor (Andreessen Horowitz).",
+  "scores": {
+    "correct_mean": 1.0,
+    "correct_median": 1.0,
+    "faithful_mean": 1.0,
+    "faithful_median": 1.0,
+    "precision_mean": 0.967,
+    "precision_median": 1.0,
+    "correct": 1.0,
+    "faithful": 1.0,
+    "precision": 1.0,
+    "verdict": "PASS",
+    "verdict_mean": "PASS",
+    "verdict_median": "PASS",
+    "cited": true,
+    "keyword_hit": true,
+    "panel_size": 3,
+    "per_judge": [
+      {
+        "judge": "gpt-5.4",
+        "provider": "openai",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 0.9,
+        "verdict": "PASS",
+        "reasoning": "The answer correctly gives the closed round details: $2B seed, $12B valuation, led by Andreessen Horowitz. These claims are directly supported by the retrieved TechCrunch and Wikipedia evidence, and the answer includes citations. Precision is slightly reduced because it adds investor details from Wikipedia that are not in the ground-truth, though they are still supported by evidence."
+      },
+      {
+        "judge": "gemini-3.5-flash",
+        "provider": "gemini",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "The agent's answer is completely accurate, fully aligned with the ground truth, and perfectly grounded in the retrieved evidence. All details, such as the $2B round, $12B valuation, lead investor (Andreessen Horowitz), and additional co-investors, are faithfully represented and cited."
+      },
+      {
+        "judge": "opus-4.8",
+        "provider": "anthropic",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "Answer correctly states $2B seed, $12B valuation, and a16z lead, all grounded in retrieved evidence. The Albania $10M detail is supported by Wikipedia evidence. Citations present and all named investors are accurate."
+      }
+    ]
+  },
+  "stopped_reason": "model_finished",
+  "steps": 4,
+  "reads": 2,
+  "tool_calls": 5,
+  "apify_runs": 0,
+  "tokens": 21661,
+  "elapsed": 48.1
+}

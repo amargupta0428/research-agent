@@ -1,0 +1,91 @@
+{
+  "id": "q13",
+  "goal": "Compare the most recent disclosed/reported standalone private valuation of four AI companies \u2014 OpenAI, Anthropic, xAI, and Mistral AI \u2014 and determine which has the highest valuation and the figure.",
+  "kind": "synthesis",
+  "expected": "Anthropic has the highest valuation at $965 billion (Series H, announced 2026-05-28), ahead of OpenAI ($852 billion, March 2026 round), xAI ($230 billion, Series E Jan 2026), and Mistral AI (~EUR 11.7B / ~$12-13B confirmed Series C), as of 2026-06-18.",
+  "answer": "# Private Valuation Comparison: OpenAI, Anthropic, xAI, and Mistral AI\n\nHere is a comparison of the most recent **disclosed, standalone private valuations** for each company, based on their latest closed funding rounds:\n\n---\n\n## The Four Companies at a Glance\n\n| Company | Latest Round | Amount Raised | Post-Money Valuation | Date Closed |\n|---|---|---|---|---|\n| **Anthropic** | Series H | $65 billion | **$965 billion** | May 2026 [1] |\n| **OpenAI** | (Unnamed round) | $122 billion | $852 billion | March 31, 2026 [2] |\n| **xAI** | Series E | $20 billion | ~$230 billion | January 2026 [3] |\n| **Mistral AI** | Series C | \u20ac1.7 billion (~$2B) | \u20ac11.7 billion (~$13.5B) | September 2025 [4] |\n\n---\n\n## \ud83c\udfc6 Winner: Anthropic \u2014 $965 Billion\n\n**Anthropic holds the highest standalone private valuation** among these four AI companies, at **$965 billion** following its Series H funding round of $65 billion closed in May 2026. The round was led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital, with $5 billion from Amazon among $15 billion total from hyperscalers [1]. This eclipses OpenAI's $852 billion valuation set just two months earlier in March 2026 [2].\n\n---\n\n## Individual Breakdowns\n\n### 1. \ud83e\udd47 Anthropic \u2014 $965 Billion (Series H, May 2026)\nAnthropic's Series H raised $65 billion at a **$965 billion post-money valuation**, making it the most valuable private AI startup in the world at the time of this research [1]. This follows a rapid ascent: the company was valued at $380 billion in its Series G (February 2026) [5], and $183 billion at Series F (September 2025).\n\n### 2. \ud83e\udd48 OpenAI \u2014 $852 Billion (March 31, 2026)\nOpenAI closed a $122 billion funding round \u2014 the largest private financing deal in history \u2014 at an **$852 billion post-money valuation** on March 31, 2026. The round was anchored by Amazon, SoftBank, and NVIDIA, with continued participation from Microsoft, and co-led by SoftBank and a16z [2].\n\n### 3. \ud83e\udd49 xAI \u2014 ~$230 Billion (Series E, January 2026)\nElon Musk's xAI raised $20 billion in a Series E round \u2014 exceeding its prior $15 billion target \u2014 at an implied valuation of approximately **$230 billion**. Key investors included Nvidia, Cisco Investments, Fidelity, Qatar Investment Authority, and MGX [3].\n\n### 4. Mistral AI \u2014 ~$13.5 Billion (Series C, September 2025)\nMistral AI's most recently **closed** round was its Series C, raising \u20ac1.7 billion at a post-money valuation of **\u20ac11.7 billion (~$13.5 billion)**, led by ASML Holding NV with participation from a16z, NVIDIA, General Catalyst, and others [4]. *(Note: As of mid-June 2026, Mistral was reportedly in early talks to raise ~\u20ac3 billion at a ~\u20ac20 billion valuation, but this round had not yet closed [6].)*\n\n---\n\n> **Key caveat:** Private valuations are set at the time of a funding round and reflect investor sentiment and deal terms \u2014 they are not market prices. The figures above are post-money valuations from the most recently **closed and disclosed** primary rounds for each company.",
+  "citations": [
+    {
+      "id": 1,
+      "url": "https://fortune.com/2026/05/29/anthropic-raises-65-billion-at-record-965-billion-valuation-promises-mythos-ai-model-in-wide-release-in-coming-weeks-releases-claude-opus-4-8/",
+      "note": "Fortune reporting on Anthropic's Series H: $65B raised at $965B post-money valuation, May 29, 2026. Led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital; $5B from Amazon."
+    },
+    {
+      "id": 2,
+      "url": "https://openai.com/index/accelerating-the-next-phase-ai/",
+      "note": "OpenAI's official press release: $122B funding round closed March 31, 2026, at $852B post-money valuation. Anchored by Amazon, NVIDIA, SoftBank; co-led by SoftBank and a16z."
+    },
+    {
+      "id": 3,
+      "url": "https://www.cnbc.com/2026/01/06/elon-musk-xai-raises-20-billion-from-nvidia-cisco-investors.html",
+      "note": "CNBC: xAI raised $20B in Series E at ~$230B valuation in January 2026. Investors include Nvidia, Cisco Investments, Fidelity, Qatar Investment Authority, MGX."
+    },
+    {
+      "id": 4,
+      "url": "https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai/",
+      "note": "Mistral AI official press release: Series C raised \u20ac1.7B at \u20ac11.7B post-money valuation, September 2025. Led by ASML Holding NV."
+    },
+    {
+      "id": 5,
+      "url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
+      "note": "Anthropic official announcement: $30B Series G closed February 12, 2026 at $380B post-money valuation. Led by GIC and Coatue."
+    },
+    {
+      "id": 6,
+      "url": "https://techcrunch.com/2026/06/12/mistral-is-rumored-to-be-raising-e3b-at-e20-valuation/",
+      "note": "TechCrunch: Mistral AI in early talks (not yet closed) to raise \u20ac3B at ~\u20ac20B valuation as of June 12, 2026."
+    }
+  ],
+  "confidence": "high \u2014 All four valuations are sourced from either official company press releases or major financial outlets (Fortune, CNBC, OpenAI.com, Anthropic.com, Mistral.ai). The Anthropic Series H at $965B is corroborated by multiple independent sources. The only minor uncertainty is Mistral's potential new round, which had not closed at research time.",
+  "scores": {
+    "correct_mean": 1.0,
+    "correct_median": 1.0,
+    "faithful_mean": 0.95,
+    "faithful_median": 0.95,
+    "precision_mean": 0.975,
+    "precision_median": 0.975,
+    "correct": 1.0,
+    "faithful": 0.95,
+    "precision": 0.975,
+    "verdict": "PASS",
+    "verdict_mean": "PASS",
+    "verdict_median": "PASS",
+    "cited": true,
+    "keyword_hit": true,
+    "panel_size": 2,
+    "per_judge": [
+      {
+        "judge": "gpt-5.4",
+        "provider": "openai",
+        "correct": 1.0,
+        "faithful": 0.9,
+        "cited": true,
+        "precision": 0.95,
+        "verdict": "PASS",
+        "reasoning": "The answer correctly identifies Anthropic as highest at $965 billion and accurately compares it with OpenAI ($852B), xAI (~$230B), and Mistral (\u20ac11.7B/~$13.5B). These figures are supported by the retrieved evidence, though a few extra specifics (e.g., exact investor rosters/date nuances and Mistral's rumored round) are not fully necessary or perfectly grounded."
+      },
+      {
+        "judge": "gemini-3.5-flash",
+        "provider": "gemini",
+        "error": "Expecting ',' delimiter: line 8 column 1 (char 292)"
+      },
+      {
+        "judge": "opus-4.8",
+        "provider": "anthropic",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "The answer correctly identifies Anthropic as highest at $965B Series H, with accurate figures for all four companies, all grounded in retrieved evidence and properly cited."
+      }
+    ]
+  },
+  "stopped_reason": "budget: max tool calls (16) reached",
+  "steps": 6,
+  "reads": 5,
+  "tool_calls": 16,
+  "apify_runs": 0,
+  "tokens": 75682,
+  "elapsed": 138.5
+}

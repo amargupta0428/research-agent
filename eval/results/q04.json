@@ -1,0 +1,78 @@
+{
+  "id": "q04",
+  "goal": "Identify the IPO offer price per share, gross proceeds, and exchange/ticker for CoreWeave's March 2025 initial public offering.",
+  "kind": "fact",
+  "expected": "CoreWeave priced its IPO at $40.00 per share on March 27, 2025, selling 37.5 million Class A shares to raise about $1.5 billion (gross), listing on the Nasdaq Global Select Market under ticker CRWV; shares began trading March 28, 2025. The $40 price was below the expected $47-$55 range.",
+  "answer": "## CoreWeave IPO \u2013 March 2025 Key Details\n\n| Detail | Value |\n|---|---|\n| **IPO Offer Price** | **$40.00 per share** |\n| **Gross Proceeds (to CoreWeave)** | **~$1.464 billion** |\n| **Exchange / Ticker** | **Nasdaq Global Select Market / CRWV** |\n\n### Additional Context\n\n- **Pricing date:** March 27, 2025; **Trading commenced:** March 28, 2025; **Offering closed:** March 31, 2025 [1][2]\n- **Total shares offered:** 37,500,000 shares \u2014 of which 36,590,000 were sold by CoreWeave itself and 910,000 were sold by existing stockholders (\"Selling Stockholders\"). CoreWeave did **not** receive proceeds from the stockholder-sold shares [1][2].\n- **Underwriter over-allotment option:** Underwriters were granted a 30-day option to purchase up to an additional **5,625,000 shares** at the IPO price, which could have increased total proceeds further [1].\n- The IPO was one of the most anticipated tech offerings of 2025, with CoreWeave positioning itself as a leading AI cloud infrastructure provider backed by Nvidia [2].",
+  "citations": [
+    {
+      "id": 1,
+      "url": "https://www.stocktitan.net/news/CRWV/core-weave-announces-pricing-of-initial-public-enly9pvuymd5.html",
+      "title": "CoreWeave AI Sets $40 Share Price for $1.5B Nasdaq IPO \u2013 Stock Titan (Official Pricing Announcement)",
+      "note": "Primary pricing announcement confirming $40/share, 37.5M shares, ~$1.46B gross proceeds, Nasdaq/CRWV, and 5.625M share overallotment option."
+    },
+    {
+      "id": 2,
+      "url": "https://www.lw.com/en/news/latham-watkins-advises-on-coreweave-us1-5-billion-ipo",
+      "title": "Latham Watkins Advises on CoreWeave US$1.5 Billion IPO",
+      "note": "Corroborating source from IPO legal counsel confirming $40/share, ~US$1.464B gross proceeds to CoreWeave, and Nasdaq/CRWV listing on March 28, 2025."
+    }
+  ],
+  "confidence": "high \u2014 Two independent, authoritative sources (the official IPO pricing press release and the lead counsel's announcement) are fully consistent on all three key figures.",
+  "scores": {
+    "correct_mean": 0.833,
+    "correct_median": 1.0,
+    "faithful_mean": 1.0,
+    "faithful_median": 1.0,
+    "precision_mean": 1.0,
+    "precision_median": 1.0,
+    "correct": 1.0,
+    "faithful": 1.0,
+    "precision": 1.0,
+    "verdict": "PASS",
+    "verdict_mean": "PARTIAL",
+    "verdict_median": "PASS",
+    "cited": true,
+    "keyword_hit": false,
+    "panel_size": 3,
+    "per_judge": [
+      {
+        "judge": "gpt-5.4",
+        "provider": "openai",
+        "correct": 0.5,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PARTIAL",
+        "reasoning": "The answer gets the offer price and Nasdaq/CRWV listing right, but the gross proceeds given are proceeds to CoreWeave (~$1.464B), not the IPO's gross offering size of about $1.5B stated in the ground truth. All substantive claims are supported by the retrieved evidence, and the answer includes citations."
+      },
+      {
+        "judge": "gemini-3.5-flash",
+        "provider": "gemini",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "The agent accurately identified the IPO price of $40.00, the gross proceeds of ~$1.464 billion to CoreWeave, and the Nasdaq/CRWV listing. All claims are fully supported by the retrieved evidence and are highly precise."
+      },
+      {
+        "judge": "opus-4.8",
+        "provider": "anthropic",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "Answer correctly states $40 price, ~$1.464B gross proceeds to CoreWeave (the precise figure from evidence; the $1.5B total includes selling stockholders), and Nasdaq/CRWV. All claims grounded in retrieved evidence with citations."
+      }
+    ]
+  },
+  "stopped_reason": "model_finished",
+  "steps": 4,
+  "reads": 2,
+  "tool_calls": 5,
+  "apify_runs": 0,
+  "tokens": 21024,
+  "elapsed": 51.4
+}

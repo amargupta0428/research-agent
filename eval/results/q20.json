@@ -1,0 +1,86 @@
+{
+  "id": "q20",
+  "goal": "Find Meta Platforms' 2026 capital expenditure guidance as originally disclosed on its Q4/full-year 2025 earnings call (late January 2026), including the exact range.",
+  "kind": "market",
+  "expected": "$115 billion to $135 billion in 2026 capex (including principal payments on finance leases), as originally disclosed on Meta's Q4/FY2025 earnings call in late January 2026 (vs. $72.22B spent in 2025). Meta later RAISED this to $125-145 billion at Q1 2026 earnings; the original Q4 2025 figure is $115-135B. As of 2026-06-18.",
+  "answer": "## Meta Platforms' 2026 Capital Expenditure Guidance (Q4/Full-Year 2025 Earnings Call \u2014 January 28, 2026)\n\nOn its Q4 and full-year 2025 earnings call held on **January 28, 2026**, Meta Platforms disclosed the following 2026 capital expenditure guidance:\n\n> **$115 billion to $135 billion** (including principal payments on finance leases) [1][2]\n\n### Key Details\n\n| Item | Figure |\n|---|---|\n| **2026 Capex Guidance Range** | **$115B \u2013 $135B** |\n| Midpoint | ~$125B |\n| 2025 Actual Capex (for comparison) | $72.22 billion |\n| Year-over-Year Increase | ~60\u201387% |\n\n### Context & Rationale\n- The guidance covered investments in **data centers, servers, and AI infrastructure**, representing nearly **double** Meta's 2025 capex of ~$72 billion [2][3].\n- Management attributed the massive step-up to increased investment supporting **Meta Superintelligence Labs** efforts and its core business [1].\n- Despite the significant increase in infrastructure spending, Meta stated it expected **2026 operating income to exceed 2025 levels** [1].\n- CFO **Susan Li** presented the financial outlook, framing the investment as critical to powering Meta's AI ambitions [3].\n\n### Subsequent Revision\nFor reference, Meta later **raised** this guidance on its Q1 2026 earnings call (April 30, 2026) to **$125 billion\u2013$145 billion**, citing even greater AI infrastructure needs [4].\n\n---\n*The $115B\u2013$135B range is the figure as **originally disclosed** on the January 28, 2026 earnings call.*",
+  "citations": [
+    {
+      "id": 1,
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx",
+      "note": "Official Meta investor relations press release for Q4/FY2025, dated January 28, 2026, disclosing 2026 capex guidance of $115\u2013$135 billion including principal payments on finance leases."
+    },
+    {
+      "id": 2,
+      "url": "https://ts2.tech/en/meta-stock-jumps-nearly-10-after-earnings-even-with-135-billion-ai-spending-plan/",
+      "note": "Reports the $115B\u2013$135B 2026 capex range disclosed on Q4 2025 earnings, compared to $72.22B in 2025, tied to Meta Superintelligence Labs."
+    },
+    {
+      "id": 3,
+      "url": "https://technotrenz.com/news/meta-q4-and-year-2025-earnings/",
+      "note": "Details Meta Q4 2025 earnings including FY2026 capex guidance range of $115B\u2013$135B with midpoint of $125B."
+    },
+    {
+      "id": 4,
+      "url": "https://finance.yahoo.com/sectors/technology/article/meta-stock-sinks-after-q1-earnings-as-company-raises-2026-ai-spending-forecast-to-125-billion-145-billion-160136308.html",
+      "note": "Confirms Meta raised its 2026 capex guidance to $125B\u2013$145B in April 2026, up from the original $115B\u2013$135B disclosed in January 2026."
+    }
+  ],
+  "confidence": "high \u2014 The $115B\u2013$135B range is confirmed by Meta's own official investor relations press release (primary source, fetched and read) and corroborated by multiple independent news sources. The exact range and its context are unambiguous.",
+  "scores": {
+    "correct_mean": 1.0,
+    "correct_median": 1.0,
+    "faithful_mean": 0.933,
+    "faithful_median": 1.0,
+    "precision_mean": 0.967,
+    "precision_median": 1.0,
+    "correct": 1.0,
+    "faithful": 1.0,
+    "precision": 1.0,
+    "verdict": "PASS",
+    "verdict_mean": "PASS",
+    "verdict_median": "PASS",
+    "cited": true,
+    "keyword_hit": true,
+    "panel_size": 3,
+    "per_judge": [
+      {
+        "judge": "gpt-5.4",
+        "provider": "openai",
+        "correct": 1.0,
+        "faithful": 0.8,
+        "cited": true,
+        "precision": 0.9,
+        "verdict": "PASS",
+        "reasoning": "The answer correctly gives Meta's original Q4/FY2025 2026 capex guidance as $115B-$135B, including finance lease principal payments, and notes the later raise to $125B-$145B. Most core claims are supported by the retrieved investor-relations evidence, though a few extra specifics (e.g., exact call date/CFO attribution and infrastructure detail phrasing) are not directly shown in the evidence."
+      },
+      {
+        "judge": "gemini-3.5-flash",
+        "provider": "gemini",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "The agent's answer is exceptionally accurate and matches the ground truth perfectly. Every detail, including the exact range of $115B to $135B, comparison to 2025 capex, and the subsequent Q1 revision, is fully supported by the retrieved evidence and cited appropriately."
+      },
+      {
+        "judge": "opus-4.8",
+        "provider": "anthropic",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "The answer correctly states the $115-135B original Q4 2025 guidance including finance lease principal payments, the $72.22B 2025 actual, and the subsequent revision to $125-145B, all fully supported by retrieved evidence and cited."
+      }
+    ]
+  },
+  "stopped_reason": "model_finished",
+  "steps": 5,
+  "reads": 1,
+  "tool_calls": 6,
+  "apify_runs": 1,
+  "tokens": 29665,
+  "elapsed": 59.1
+}

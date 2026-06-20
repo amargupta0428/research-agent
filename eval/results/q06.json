@@ -1,0 +1,78 @@
+{
+  "id": "q06",
+  "goal": "On what exact date did Google complete (close) its acquisition of cloud security company Wiz, and what was the all-cash purchase price?",
+  "kind": "fact",
+  "expected": "Google completed its acquisition of Wiz on March 11, 2026, for $32 billion in an all-cash deal (announced March 18, 2025; closed roughly a year later after US and EU regulatory clearance).",
+  "answer": "Google completed (closed) its acquisition of cloud security company **Wiz** on **March 11, 2026**, for an all-cash purchase price of **$32 billion** [1][2].\n\nHere are the key details of the deal:\n\n- **Announcement date:** March 18, 2025, when Google signed a definitive agreement to acquire Wiz [2].\n- **Closing date:** March 11, 2026 [1].\n- **Price:** $32 billion, all-cash (subject to customary closing adjustments) [1][2].\n- **Significance:** This is the **largest acquisition in Google's history** [1].\n- **Regulatory path:** U.S. regulatory approval was received in November 2025, and EU regulatory approval followed in February 2026 [1].\n- **Background:** Google had previously made an initial offer of ~$23 billion in 2024, which Wiz CEO Assaf Rappaport rejected. The companies returned to negotiations and agreed on the $32 billion figure in early 2025 [1].\n\nOnce closed, Wiz \u2014 a leading multicloud security platform headquartered in New York \u2014 joined Google Cloud, with its products continuing to work across competing cloud platforms including AWS, Microsoft Azure, and Oracle Cloud [2].",
+  "citations": [
+    {
+      "id": 1,
+      "url": "https://techcrunch.com/2026/03/11/google-completes-32b-acquisition-of-wiz/",
+      "title": "Google wraps up $32B acquisition of cloud cybersecurity startup Wiz | TechCrunch",
+      "note": "Confirms closing date of March 11, 2026, $32B all-cash price, regulatory approval timeline, and deal history."
+    },
+    {
+      "id": 2,
+      "url": "https://blog.google/inside-google/company-announcements/google-agreement-acquire-wiz/",
+      "title": "Google announces agreement to acquire Wiz | Google Blog",
+      "note": "Google's official announcement of the definitive agreement on March 18, 2025, confirming $32B all-cash deal terms and Wiz joining Google Cloud."
+    }
+  ],
+  "confidence": "high \u2014 The closing date (March 11, 2026) and price ($32 billion all-cash) are confirmed by both Google's own official blog and TechCrunch's contemporaneous reporting, with multiple other outlets corroborating the same figures.",
+  "scores": {
+    "correct_mean": 1.0,
+    "correct_median": 1.0,
+    "faithful_mean": 1.0,
+    "faithful_median": 1.0,
+    "precision_mean": 1.0,
+    "precision_median": 1.0,
+    "correct": 1.0,
+    "faithful": 1.0,
+    "precision": 1.0,
+    "verdict": "PASS",
+    "verdict_mean": "PASS",
+    "verdict_median": "PASS",
+    "cited": true,
+    "keyword_hit": true,
+    "panel_size": 3,
+    "per_judge": [
+      {
+        "judge": "gpt-5.4",
+        "provider": "openai",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "The answer states the exact closing date and all-cash price correctly: March 11, 2026 and $32 billion. All key added details are supported by the retrieved TechCrunch and Google blog evidence, and the response includes citations."
+      },
+      {
+        "judge": "gemini-3.5-flash",
+        "provider": "gemini",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "The agent's answer correctly identifies the exact completion date (March 11, 2026) and the all-cash purchase price ($32 billion). Every claim in the response is fully supported by the retrieved evidence and cited appropriately."
+      },
+      {
+        "judge": "opus-4.8",
+        "provider": "anthropic",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "Answer states the correct closing date (March 11, 2026) and $32 billion all-cash price, both fully supported by the retrieved evidence. All supporting details (announcement date, regulatory path, multicloud support) are grounded in the evidence and citations are present."
+      }
+    ]
+  },
+  "stopped_reason": "model_finished",
+  "steps": 3,
+  "reads": 2,
+  "tool_calls": 4,
+  "apify_runs": 0,
+  "tokens": 15614,
+  "elapsed": 40.7
+}

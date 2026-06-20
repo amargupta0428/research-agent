@@ -1,0 +1,72 @@
+{
+  "id": "q18",
+  "goal": "Find Spotify's Monthly Active Users (MAU) and Premium Subscriber figures disclosed in its most recent quarterly earnings as of June 2026, tied to the specific quarter and report date.",
+  "kind": "market",
+  "expected": "761 million Monthly Active Users (up 12% YoY) and 293 million Premium Subscribers (up 9% YoY, +3M net adds) on revenue of EUR 4.5 billion, for Q1 2026, reported April 28, 2026. (Prior quarter Q4 2025 was 751M MAU / 290M Premium.) As of 2026-06-18.",
+  "answer": "# Spotify's Most Recent Quarterly Earnings: Key User Metrics (as of June 2026)\n\n## Report at a Glance\n\n| Detail | Value |\n|---|---|\n| **Quarter Covered** | Q1 2026 (January \u2013 March 2026) |\n| **Report Date** | **April 28, 2026** |\n| **Source** | Spotify Newsroom (official press release) |\n\n---\n\n## Key User Metrics \u2014 Q1 2026\n\n| Metric | Q1 2026 Figure | Year-over-Year Growth |\n|---|---|---|\n| **Monthly Active Users (MAUs)** | **761 million** | +12% Y/Y |\n| **Premium Subscribers** | **293 million** | +9% Y/Y |\n\n---\n\n## Additional Financial Context [1]\n\n- **Total Revenue:** \u20ac4.5 billion (+14% Y/Y on a constant-currency basis, +8% in reported terms)\n- **Gross Margin:** ~33% (~140 basis points improvement Y/Y)\n- **Operating Income:** \u20ac715 million\n\n---\n\n## Notes\n- These figures were disclosed in Spotify's **Q1 2026 Shareholder Letter and Earnings Report**, published on **April 28, 2026** \u2014 the most recent quarterly earnings release as of June 2026 [1].\n- For context, the immediately prior quarter (Q4 2025, reported February 10, 2026) showed **751 million MAUs** and **290 million Premium Subscribers** [1].\n",
+  "citations": [
+    {
+      "id": 1,
+      "url": "https://newsroom.spotify.com/2026-04-28/spotify-q1-2026-earnings/",
+      "title": "Spotify Reports First Quarter 2026 Earnings \u2013 Spotify Newsroom",
+      "note": "Official Spotify press release for Q1 2026 earnings, published April 28, 2026. Discloses 761M MAUs (+12% Y/Y) and 293M Premium Subscribers (+9% Y/Y)."
+    }
+  ],
+  "confidence": "high \u2014 Figures sourced directly from Spotify's official newsroom press release for Q1 2026, published April 28, 2026, and cross-referenced against search snippets from the same release.",
+  "scores": {
+    "correct_mean": 1.0,
+    "correct_median": 1.0,
+    "faithful_mean": 1.0,
+    "faithful_median": 1.0,
+    "precision_mean": 1.0,
+    "precision_median": 1.0,
+    "correct": 1.0,
+    "faithful": 1.0,
+    "precision": 1.0,
+    "verdict": "PASS",
+    "verdict_mean": "PASS",
+    "verdict_median": "PASS",
+    "cited": true,
+    "keyword_hit": true,
+    "panel_size": 3,
+    "per_judge": [
+      {
+        "judge": "gpt-5.4",
+        "provider": "openai",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "The answer matches the ground truth: Q1 2026, reported April 28, 2026, with 761M MAUs and 293M Premium Subscribers, and includes the prior-quarter context. All key figures stated are directly supported by the retrieved Spotify Q1 2026 earnings evidence, and the answer includes a citation marker."
+      },
+      {
+        "judge": "gemini-3.5-flash",
+        "provider": "gemini",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "The agent provided all correct metrics for Spotify's Q1 2026 earnings, including Monthly Active Users, Premium Subscribers, report date, and prior quarter data. All information matches the ground truth and is fully supported by the retrieved evidence with citations."
+      },
+      {
+        "judge": "opus-4.8",
+        "provider": "anthropic",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "Answer matches ground-truth exactly (761M MAU, 293M Premium, Q1 2026, April 28 2026) and all claims are grounded in retrieved evidence, including the prior-quarter context. Cited sources present."
+      }
+    ]
+  },
+  "stopped_reason": "model_finished",
+  "steps": 4,
+  "reads": 1,
+  "tool_calls": 4,
+  "apify_runs": 0,
+  "tokens": 19243,
+  "elapsed": 49.1
+}

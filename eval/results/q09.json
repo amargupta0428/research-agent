@@ -1,0 +1,78 @@
+{
+  "id": "q09",
+  "goal": "Identify the size of Nvidia's announced investment in OpenAI, the gigawatts of systems to be deployed, the announcement date, and the platform used for the first gigawatt.",
+  "kind": "fact",
+  "expected": "On September 22, 2025, Nvidia and OpenAI announced a strategic partnership: Nvidia intends to invest up to $100 billion in OpenAI to deploy at least 10 gigawatts of Nvidia systems; the first gigawatt comes online in H2 2026 on the Nvidia Vera Rubin platform.",
+  "answer": "Here are all four key details from Nvidia and OpenAI's announced strategic partnership:\n\n| Detail | Value |\n|---|---|\n| **Investment Size** | Up to **$100 billion** from NVIDIA in OpenAI |\n| **Gigawatts to be Deployed** | At least **10 gigawatts (GW)** of NVIDIA systems |\n| **Announcement Date** | **September 22, 2025** |\n| **Platform for First Gigawatt** | **NVIDIA Vera Rubin** platform |\n\n### Key Additional Context [1]:\n- The investment is structured **progressively** \u2014 NVIDIA intends to invest as each gigawatt is deployed (not all at once upfront).\n- The **first gigawatt** of NVIDIA systems is scheduled to be deployed in the **second half of 2026** on the Vera Rubin platform.\n- The partnership was announced as a **letter of intent** for strategic collaboration between OpenAI and NVIDIA.\n- The 10 GW build-out is equivalent to **4\u20135 million GPUs**, according to NVIDIA CEO Jensen Huang [2].\n\n[1] Official Nvidia press release, September 22, 2025\n[2] CNBC report on the Nvidia\u2013OpenAI deal, September 22, 2025",
+  "citations": [
+    {
+      "id": 1,
+      "url": "https://nvidianews.nvidia.com/news/openai-and-nvidia-announce-strategic-partnership-to-deploy-10gw-of-nvidia-systems",
+      "title": "OpenAI and NVIDIA Announce Strategic Partnership to Deploy 10GW of NVIDIA Systems \u2013 Nvidia Newsroom",
+      "note": "Official Nvidia press release confirming the $100B investment, 10 GW deployment, September 22 2025 date, and Vera Rubin as the first-gigawatt platform."
+    },
+    {
+      "id": 2,
+      "url": "https://www.cnbc.com/2025/09/22/nvidia-openai-data-center.html",
+      "title": "Nvidia to invest up to $100 billion in OpenAI data center buildout \u2013 CNBC",
+      "note": "CNBC report quoting Jensen Huang that the 10 GW project is equivalent to 4\u20135 million GPUs."
+    }
+  ],
+  "confidence": "high \u2014 All four facts are directly sourced from the official Nvidia press release page, which was successfully fetched and read.",
+  "scores": {
+    "correct_mean": 1.0,
+    "correct_median": 1.0,
+    "faithful_mean": 1.0,
+    "faithful_median": 1.0,
+    "precision_mean": 1.0,
+    "precision_median": 1.0,
+    "correct": 1.0,
+    "faithful": 1.0,
+    "precision": 1.0,
+    "verdict": "PASS",
+    "verdict_mean": "PASS",
+    "verdict_median": "PASS",
+    "cited": true,
+    "keyword_hit": true,
+    "panel_size": 3,
+    "per_judge": [
+      {
+        "judge": "gpt-5.4",
+        "provider": "openai",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "The answer matches all requested ground-truth details: up to $100B investment, at least 10 GW, announcement on Sept. 22, 2025, and first gigawatt on NVIDIA Vera Rubin in H2 2026. All key claims are supported by the retrieved Nvidia press release evidence, and the answer includes source citations."
+      },
+      {
+        "judge": "gemini-3.5-flash",
+        "provider": "gemini",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "The agent provided completely correct answers for all four requested details, fully supported by the retrieved evidence. Appropriate citations were provided and all details were accurate."
+      },
+      {
+        "judge": "opus-4.8",
+        "provider": "anthropic",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "All four facts match the ground truth and are supported by the retrieved evidence (press release fetch). Citations are present and additional context (4-5M GPUs, progressive investment) is grounded in evidence."
+      }
+    ]
+  },
+  "stopped_reason": "model_finished",
+  "steps": 4,
+  "reads": 1,
+  "tool_calls": 3,
+  "apify_runs": 0,
+  "tokens": 14624,
+  "elapsed": 42.0
+}

@@ -1,0 +1,78 @@
+{
+  "id": "q01",
+  "goal": "Identify the lead investor and the exact post-money valuation of Anthropic's Series F funding round announced in September 2025, and the total amount raised.",
+  "kind": "fact",
+  "expected": "Anthropic raised $13 billion in its Series F, announced September 2, 2025, at a $183 billion post-money valuation. The round was led by ICONIQ, co-led by Fidelity Management & Research Company and Lightspeed Venture Partners.",
+  "answer": "## Anthropic Series F Funding Round (September 2025)\n\nHere are the key details of Anthropic's Series F funding round, announced on **September 2, 2025**:\n\n| Detail | Value |\n|---|---|\n| **Total Amount Raised** | **$13 billion** |\n| **Post-Money Valuation** | **$183 billion** |\n| **Lead Investor** | **ICONIQ** |\n| **Co-Lead Investors** | Fidelity Management & Research Company, Lightspeed Venture Partners |\n\n### Key Details\n\n- **Lead Investor:** **ICONIQ** was the primary lead investor, with ICONIQ Partner Divesh Makan explicitly stating ICONIQ made \"the lead investment.\" [2]\n- **Co-leads:** **Fidelity Management & Research Company** and **Lightspeed Venture Partners** served as co-lead investors. [1][2]\n- **Total Raised:** **$13 billion**, making it one of the largest private funding rounds in history, accounting for ~42% of all U.S. venture capital funding for the month of September 2025. [1]\n- **Post-Money Valuation:** **$183 billion**, a dramatic jump from its previous Series E valuation of $61.5 billion (March 2025). [1][2]\n- **Additional Investors:** The round also drew participation from Altimeter, Baillie Gifford, BlackRock, Blackstone, Coatue, D1 Capital Partners, Goldman Sachs Alternatives, General Atlantic, Insight Partners, Ontario Teachers' Pension Plan, Qatar Investment Authority, and TPG. [1][2]\n- At the time of the raise, Anthropic reported over 300,000 business customers and an annualized revenue run-rate of over **$5 billion** (up from ~$1 billion just eight months earlier). [1]",
+  "citations": [
+    {
+      "id": 1,
+      "url": "https://techcrunch.com/2025/09/02/anthropic-raises-13b-series-f-at-183b-valuation/",
+      "title": "Anthropic raises $13B Series F at $183B valuation | TechCrunch",
+      "note": "Primary source confirming $13B raised, $183B post-money valuation, and co-lead investors: ICONIQ, Fidelity, and Lightspeed."
+    },
+    {
+      "id": 2,
+      "url": "https://www.thesoftwarereport.com/anthropic-secures-13b-series-f-funding-at-183b-valuation/",
+      "title": "Anthropic Secures $13B Series F Funding at $183B Valuation | The Software Report",
+      "note": "Corroborating source explicitly naming ICONIQ as the lead investor, with Fidelity and Lightspeed as co-leads, and ICONIQ Partner Divesh Makan confirming ICONIQ made 'the lead investment.'"
+    }
+  ],
+  "confidence": "high \u2014 Two independent, authoritative sources (TechCrunch and The Software Report) fully corroborate all three key data points: lead investor (ICONIQ), post-money valuation ($183B), and total amount raised ($13B), with both sources read and grounded in this session.",
+  "scores": {
+    "correct_mean": 1.0,
+    "correct_median": 1.0,
+    "faithful_mean": 0.9,
+    "faithful_median": 1.0,
+    "precision_mean": 0.933,
+    "precision_median": 1.0,
+    "correct": 1.0,
+    "faithful": 1.0,
+    "precision": 1.0,
+    "verdict": "PASS",
+    "verdict_mean": "PASS",
+    "verdict_median": "PASS",
+    "cited": true,
+    "keyword_hit": true,
+    "panel_size": 3,
+    "per_judge": [
+      {
+        "judge": "gpt-5.4",
+        "provider": "openai",
+        "correct": 1.0,
+        "faithful": 0.7,
+        "cited": true,
+        "precision": 0.8,
+        "verdict": "PARTIAL",
+        "reasoning": "The core facts match the ground truth: $13B raised at a $183B post-money valuation, with ICONIQ as lead and Fidelity/Lightspeed as co-leads. However, the retrieved evidence also says TechCrunch described the round as co-led by ICONIQ, Fidelity, and Lightspeed, so the answer\u2019s stronger 'primary lead investor' framing and several extra specifics are not uniformly supported by the evidence."
+      },
+      {
+        "judge": "gemini-3.5-flash",
+        "provider": "gemini",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "The agent's answer perfectly matches the ground truth, identifying the lead investors, total amount raised, and post-money valuation. Every claim is fully supported by the retrieved evidence and properly cited."
+      },
+      {
+        "judge": "opus-4.8",
+        "provider": "anthropic",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "Answer correctly states $13B raised, $183B post-money valuation, ICONIQ as lead, Fidelity and Lightspeed as co-leads \u2014 all supported by retrieved evidence and properly cited."
+      }
+    ]
+  },
+  "stopped_reason": "model_finished",
+  "steps": 4,
+  "reads": 2,
+  "tool_calls": 4,
+  "apify_runs": 0,
+  "tokens": 19028,
+  "elapsed": 49.1
+}

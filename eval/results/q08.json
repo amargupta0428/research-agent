@@ -1,0 +1,90 @@
+{
+  "id": "q08",
+  "goal": "How much did OpenAI pay to acquire Jony Ive's AI hardware startup 'io', what was the deal structure, and on what date did the acquisition close?",
+  "kind": "fact",
+  "expected": "OpenAI acquired io (Jony Ive's AI device startup) in an all-stock deal valued at about $6.5 billion (announced May 21, 2025); the merger completion was announced July 9, 2025. Ive took on creative/design responsibilities across OpenAI and io while LoveFrom remained independent.",
+  "answer": "## OpenAI's Acquisition of Jony Ive's 'io' Startup\n\n### Price\nOpenAI agreed to pay **$6.5 billion** (described by NPR as \"just under $6.5 billion\") for io Products, Inc. \u2014 making it **OpenAI's largest acquisition to date** [1][2][3].\n\nOne important nuance: OpenAI had already acquired a **23% stake in io** through a prior collaborative agreement, meaning the incremental cost to acquire the remaining equity was approximately **~$5 billion** [4].\n\n### Deal Structure\nThe transaction was structured as an **all-equity (all-stock) deal** \u2014 no significant cash component was disclosed. OpenAI declined to specify any cash-vs.-equity breakdown beyond confirming the all-equity nature of the transaction [4].\n\nCrucially, the deal was **not a straightforward absorption**:\n- io's **~55 employees** all joined OpenAI and the company merged into OpenAI [3].\n- **Jony Ive and his design firm, LoveFrom, remain independent** \u2014 they were not acquired outright. Instead, LoveFrom assumed **\"deep design and creative responsibilities across OpenAI\"**, working on hardware and broader product design [1][2][3].\n\n### Closing Date\n- **Announced:** May 21, 2025 [3]\n- **Merger completed (closed):** **July 9, 2025** [1][3]\n\nThe deal closed after a few months of negotiations and regulatory review, consistent with the \"summer 2025\" closing window flagged at the time of announcement [2].\n\n### Background\nio was founded in 2024 by Jony Ive (Apple's legendary former Chief Design Officer), Scott Cannon, Evans Hankey, and Tang Tan, with the goal of developing AI-native hardware products. OpenAI and Ive had been collaborating for roughly two years before the formal acquisition, which laid the groundwork for the deal [2][3].\n",
+  "citations": [
+    {
+      "id": 1,
+      "url": "https://www.windowscentral.com/artificial-intelligence/openai-chatgpt/openais-6-5-billion-jony-ive-io-purchase",
+      "title": "OpenAI closes Jony Ive AI hardware startup acquisition deal \u2013 Windows Central",
+      "note": "Confirms $6.5B price, July 9 2025 closing date, and deal structure including LoveFrom remaining independent"
+    },
+    {
+      "id": 2,
+      "url": "https://www.npr.org/2025/05/22/nx-s1-5407548/openai-jony-ive-io-deal-ai-devices",
+      "title": "OpenAI buys io, former Apple designer Jony Ive's device startup \u2013 NPR",
+      "note": "Confirms 'just under $6.5 billion', 23% prior stake, summer 2025 expected close, LoveFrom design role"
+    },
+    {
+      "id": 3,
+      "url": "https://en.wikipedia.org/wiki/Io_(company)",
+      "title": "io (company) \u2013 Wikipedia",
+      "note": "Confirms announcement May 21 2025, merger completed July 9 2025, $6.5B valuation, 55 employees joined OpenAI, LoveFrom independent"
+    },
+    {
+      "id": 4,
+      "url": "https://www.cryptopolitan.com/openai-buys-jony-ives-io-in-a-6-5bn-deal/",
+      "title": "OpenAI buys io, Jony Ive's startup, in a $6.5B deal \u2013 Cryptopolitan",
+      "note": "Confirms all-equity deal structure, OpenAI's 23% prior stake reducing incremental cost to ~$5B"
+    }
+  ],
+  "confidence": "high \u2014 All key facts (price, structure, closing date) are corroborated across at least two independent sources including Wikipedia, NPR, and Windows Central.",
+  "scores": {
+    "correct_mean": 1.0,
+    "correct_median": 1.0,
+    "faithful_mean": 0.983,
+    "faithful_median": 1.0,
+    "precision_mean": 1.0,
+    "precision_median": 1.0,
+    "correct": 1.0,
+    "faithful": 1.0,
+    "precision": 1.0,
+    "verdict": "PASS",
+    "verdict_mean": "PASS",
+    "verdict_median": "PASS",
+    "cited": true,
+    "keyword_hit": true,
+    "panel_size": 3,
+    "per_judge": [
+      {
+        "judge": "gpt-5.4",
+        "provider": "openai",
+        "correct": 1.0,
+        "faithful": 0.95,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "The answer matches the ground truth: about $6.5B, structured as an all-stock/all-equity deal, with completion on July 9, 2025, and correctly notes LoveFrom/Ive remained independent with design responsibilities. Nearly all claims are supported by the retrieved evidence, including the prior 23% stake and ~55 employees joining OpenAI."
+      },
+      {
+        "judge": "gemini-3.5-flash",
+        "provider": "gemini",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "The agent's answer is completely accurate, matches the ground truth in all respects, and is fully supported by the retrieved evidence. Proper citations are provided for every claim."
+      },
+      {
+        "judge": "opus-4.8",
+        "provider": "anthropic",
+        "correct": 1.0,
+        "faithful": 1.0,
+        "cited": true,
+        "precision": 1.0,
+        "verdict": "PASS",
+        "reasoning": "Answer correctly states ~$6.5B all-stock deal, May 21 announcement and July 9, 2025 close, all grounded in retrieved evidence (Wikipedia, Windows Central, NPR, Cryptopolitan). Extra details (23% prior stake, ~55 employees, LoveFrom independence) are all supported by evidence and cited."
+      }
+    ]
+  },
+  "stopped_reason": "model_finished",
+  "steps": 5,
+  "reads": 4,
+  "tool_calls": 7,
+  "apify_runs": 0,
+  "tokens": 32924,
+  "elapsed": 70.6
+}
