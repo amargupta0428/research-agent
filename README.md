@@ -27,7 +27,7 @@ truth, scored by a cross-provider judge panel.
 | Avg correctness (median / mean) | 0.99 / 0.97 |
 | Avg faithfulness (median / mean) | 0.99 / 0.96 |
 | Avg precision (median / mean) | 0.97 / 0.95 |
-| Cited | 100% |
+| Answers cited (inline + sources) | 100% |
 
 The judge panel is the point. Each answer is graded by three judges from three different
 providers (OpenAI gpt-5.4, Google gemini-3.5-flash, Anthropic opus-4.8), so Claude is not

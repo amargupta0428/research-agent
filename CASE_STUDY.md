@@ -52,7 +52,7 @@ reported as both a median and a mean across the panel.
 | Avg correctness (median / mean) | 0.99 / 0.97 |
 | Avg faithfulness (median / mean) | 0.99 / 0.96 |
 | Avg precision (median / mean) | 0.97 / 0.95 |
-| Cited | 100% |
+| Answers cited (inline + sources) | 100% |
 
 The agentic behavior is shown in committed traces (see `examples/`): a substantive run with
 four recoveries where official pricing pages are blocked and the agent re-routes to
